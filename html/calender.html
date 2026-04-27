@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->``
+<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
 
 <head> <!-- Entête du document HTML -->
     <title>Suivi de formation</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
@@ -7,7 +7,48 @@
 </head><!-- Fin de la balise d'entête --> 
 
 <body><!-- Début du code de la page web -->
+<header>
+    <img class="logo_efrei" src="../img/efrei.png" alt="logo efrei" >
+    <img class="logo_site" src="../img/logo.png" alt="logo du site" >
+</header>
+<div class="calendar">
 
+    <div class="header">
+        <button id="prev">◀</button>
+
+        <select id="month">
+            <option value="0">Janvier</option>
+            <option value="1">Février</option>
+            <option value="2">Mars</option>
+            <option value="3">Avril</option>
+            <option value="4">Mai</option>
+            <option value="5">Juin</option>
+            <option value="6">Juillet</option>
+            <option value="7">Août</option>
+            <option value="8">Septembre</option>
+            <option value="9">Octobre</option>
+            <option value="10">Novembre</option>
+            <option value="11">Décembre</option>
+        </select>
+
+        <button id="next">▶</button>
+    </div>
+
+    <div class="days-name">
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Mer</div>
+        <div>Jeu</div>
+        <div>Ven</div>
+        <div>Sam</div>
+        <div>Dim</div>
+    </div>
+
+    <div class="days" id="calendarDays"></div>
+
+</div>
+
+<script src="script.js"></script>
 
 
 <footer>
@@ -15,6 +56,6 @@
     <a href="./login.html"> Déconnexion  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
-    </footer>
+</footer>
 </body><!-- Fin du code de la page web --> 
 </html>
