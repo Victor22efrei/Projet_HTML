@@ -7,8 +7,473 @@
 </head><!-- Fin de la balise d'entête --> 
 
 <body><!-- Début du code de la page web -->
+<header>
+    <img class="logo_efrei" src="../img/efrei.png" alt="logo efrei" >
+    <img class="logo_site" src="../img/logo.png" alt="logo du site" >
+</header>
+
+<h1>Évaluation</h1>
+<form class="questions">
+
+<fieldset class="question">
+<legend>1. Que signifie HTML ?</legend>
+
+    <input type="radio" id="q1a" name="q1" value="A">
+    <label for="q1a">HyperText Markup Language</label><br>
+
+    <input type="radio" id="q1b" name="q1" value="B">
+    <label for="q1b">Home Tool Markup Language</label><br>
+
+    <input type="radio" id="q1c" name="q1" value="C">
+    <label for="q1c">Hyper Transfer Machine Language</label>
+
+</fieldset>
 
 
+<fieldset class="question">
+<legend>2. Balise pour un titre principal ?</legend>
+
+    <input type="radio" id="q2a" name="q2" value="A">
+    <label for="q2a">h1</label><br>
+
+    <input type="radio" id="q2b" name="q2" value="B">
+    <label for="q2b">p</label><br>
+
+    <input type="radio" id="q2c" name="q2" value="C">
+    <label for="q2c">div</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>3. CSS sert à ?</legend>
+
+    <input type="radio" id="q3a" name="q3" value="A">
+    <label for="q3a">Styliser le site</label><br>
+
+    <input type="radio" id="q3b" name="q3" value="B">
+    <label for="q3b">Stocker des données</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>4. Quelle balise sert à créer un lien ?</legend>
+
+    <input type="radio" id="q4a" name="q4" value="A">
+    <label for="q4a">link</label><br>
+
+    <input type="radio" id="q4b" name="q4" value="B">
+    <label for="q4b">a</label><br>
+
+    <input type="radio" id="q4c" name="q4" value="C">
+    <label for="q4c">href</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>5. Quelle balise sert à insérer une image ?</legend>
+
+    <input type="radio" id="q5a" name="q5" value="A">
+    <label for="q5a">image</label><br>
+
+    <input type="radio" id="q5b" name="q5" value="B">
+    <label for="q5b">img</label><br>
+
+    <input type="radio" id="q5c" name="q5" value="C">
+    <label for="q5c">src</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>6. Quelle propriété change la couleur du texte ?</legend>
+
+    <input type="radio" id="q6a" name="q6" value="A">
+    <label for="q6a">background-color</label><br>
+
+    <input type="radio" id="q6b" name="q6" value="B">
+    <label for="q6b">font-color</label><br>
+
+    <input type="radio" id="q6c" name="q6" value="C">
+    <label for="q6c">color</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>7. Quelle propriété centre un texte ?</legend>
+
+    <input type="radio" id="q7a" name="q7" value="A">
+    <label for="q7a">align-text</label><br>
+
+    <input type="radio" id="q7b" name="q7" value="B">
+    <label for="q7b">text-align</label><br>
+
+    <input type="radio" id="q7c" name="q7" value="C">
+    <label for="q7c">center-text</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>8. Quelle balise sert à créer une liste non ordonnée ?</legend>
+
+    <input type="radio" id="q8a" name="q8" value="A">
+    <label for="q8a">ul</label><br>
+
+    <input type="radio" id="q8b" name="q8" value="B">
+    <label for="q8b">ol</label><br>
+
+    <input type="radio" id="q8c" name="q8" value="C">
+    <label for="q8c">li</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>9. Quelle propriété change la taille du texte ?</legend>
+
+    <input type="radio" id="q9a" name="q9" value="A">
+    <label for="q9a">text-size</label><br>
+
+    <input type="radio" id="q9b" name="q9" value="B">
+    <label for="q9b">font-size</label><br>
+
+    <input type="radio" id="q9c" name="q9" value="C">
+    <label for="q9c">size-font</label>
+
+</fieldset>
+
+
+<fieldset class="question">
+<legend>10. Quelle propriété ajoute une marge extérieure ?</legend>
+
+    <input type="radio" id="q10a" name="q10" value="A">
+    <label for="q10a">padding</label><br>
+
+    <input type="radio" id="q10b" name="q10" value="B">
+    <label for="q10b">border</label><br>
+
+    <input type="radio" id="q10c" name="q10" value="C"><label for="q10c">margin</label>
+</fieldset>
+
+<button type="submit" class="submit-btn">Envoyer</button>
+
+</form>
+<br><br><br>
+
+
+<section class="qcm" id="qcm2">
+
+<h2 class="titre_QCM">Évaluation de Java</h2>
+<button class="start-btn">Start</button>
+<div class="timer">Temps : <span>30:00</span></div>
+
+<form class="questions">
+
+<fieldset class="question">
+<legend>1. Quel mot-clé permet de créer une classe en Java ?</legend>
+
+    <input type="radio" id="j1a" name="j1" value="A">
+    <label for="j1a">function</label><br>
+
+    <input type="radio" id="j1b" name="j1" value="B">
+    <label for="j1b">class</label><br>
+
+    <input type="radio" id="j1c" name="j1" value="C">
+    <label for="j1c">object</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>2. Quelle méthode est le point de départ d’un programme Java ?</legend>
+
+    <input type="radio" id="j2a" name="j2" value="A">
+    <label for="j2a">start()</label><br>
+
+    <input type="radio" id="j2b" name="j2" value="B">
+    <label for="j2b">main()</label><br>
+
+    <input type="radio" id="j2c" name="j2" value="C">
+    <label for="j2c">run()</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>3. Quel type sert à stocker un nombre entier ?</legend>
+
+    <input type="radio" id="j3a" name="j3" value="A">
+    <label for="j3a">int</label><br>
+
+    <input type="radio" id="j3b" name="j3" value="B">
+    <label for="j3b">string</label><br>
+
+    <input type="radio" id="j3c" name="j3" value="C">
+    <label for="j3c">boolean</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>4. Quel type sert à stocker du texte ?</legend>
+
+    <input type="radio" id="j4a" name="j4" value="A">
+    <label for="j4a">String</label><br>
+
+    <input type="radio" id="j4b" name="j4" value="B">
+    <label for="j4b">text</label><br>
+
+    <input type="radio" id="j4c" name="j4" value="C">
+    <label for="j4c">char[]</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>5. Quelle instruction affiche du texte dans la console ?</legend>
+
+    <input type="radio" id="j5a" name="j5" value="A">
+    <label for="j5a">print.console()</label><br>
+
+    <input type="radio" id="j5b" name="j5" value="B">
+    <label for="j5b">System.out.println()</label><br>
+
+    <input type="radio" id="j5c" name="j5" value="C">
+    <label for="j5c">echo()</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>6. Quel symbole termine une instruction Java ?</legend>
+
+    <input type="radio" id="j6a" name="j6" value="A">
+    <label for="j6a">:</label><br>
+
+    <input type="radio" id="j6b" name="j6" value="B">
+    <label for="j6b">;</label><br>
+
+    <input type="radio" id="j6c" name="j6" value="C">
+    <label for="j6c">.</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>7. Quelle valeur booléenne existe en Java ?</legend>
+
+    <input type="radio" id="j7a" name="j7" value="A">
+    <label for="j7a">maybe</label><br>
+
+    <input type="radio" id="j7b" name="j7" value="B">
+    <label for="j7b">true</label><br>
+
+    <input type="radio" id="j7c" name="j7" value="C">
+    <label for="j7c">yes</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>8. Quelle structure sert à faire un choix ?</legend>
+
+    <input type="radio" id="j8a" name="j8" value="A">
+    <label for="j8a">if</label><br>
+
+    <input type="radio" id="j8b" name="j8" value="B">
+    <label for="j8b">repeat</label><br>
+
+    <input type="radio" id="j8c" name="j8" value="C">
+    <label for="j8c">loop</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>9. Quelle boucle répète tant qu’une condition est vraie ?</legend>
+
+    <input type="radio" id="j9a" name="j9" value="A">
+    <label for="j9a">while</label><br>
+
+    <input type="radio" id="j9b" name="j9" value="B">
+    <label for="j9b">when</label><br>
+
+    <input type="radio" id="j9c" name="j9" value="C">
+    <label for="j9c">choose</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>10. Comment écrit-on un commentaire sur une ligne ?</legend>
+
+    <input type="radio" id="j10a" name="j10" value="A">
+    <label for="j10a">## commentaire</label><br>
+
+    <input type="radio" id="j10b" name="j10" value="B">
+    <label for="j10b">// commentaire</label><br>
+
+    <input type="radio" id="j10c" name="j10" value="C">
+    <label for="j10c">** commentaire</label>
+
+</fieldset>
+
+<button type="submit" class="submit-btn">Envoyer</button>
+
+</form>
+
+</section>
+<br><br><br>
+
+<section class="qcm" id="qcm3">
+
+<h2 class="titre_QCM">Évaluation de Base de donnée</h2>
+<button class="start-btn">Start</button>
+<div class="timer">Temps : <span>30:00</span></div>
+
+<form class="questions">
+
+<fieldset class="question">
+<legend>1. Une base de données sert principalement à :</legend>
+
+    <input type="radio" id="b1a" name="b1" value="A">
+    <label for="b1a">Dessiner un site web</label><br>
+
+    <input type="radio" id="b1b" name="b1" value="B">
+    <label for="b1b">Stocker et organiser des données</label><br>
+
+    <input type="radio" id="b1c" name="b1" value="C">
+    <label for="b1c">Créer des images</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>2. En SQL, quelle commande permet d'afficher des données ?</legend>
+
+    <input type="radio" id="b2a" name="b2" value="A">
+    <label for="b2a">SELECT</label><br>
+
+    <input type="radio" id="b2b" name="b2" value="B">
+    <label for="b2b">DELETE</label><br>
+
+    <input type="radio" id="b2c" name="b2" value="C">
+    <label for="b2c">UPDATE</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>3. Une clé primaire sert à :</legend>
+
+    <input type="radio" id="b3a" name="b3" value="A">
+    <label for="b3a">Identifier chaque ligne de façon unique</label><br>
+
+    <input type="radio" id="b3b" name="b3" value="B">
+    <label for="b3b">Supprimer la table</label><br>
+
+    <input type="radio" id="b3c" name="b3" value="C">
+    <label for="b3c">Trier automatiquement les données</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>4. Une clé étrangère permet de :</legend>
+
+    <input type="radio" id="b4a" name="b4" value="A">
+    <label for="b4a">Relier deux tables entre elles</label><br>
+
+    <input type="radio" id="b4b" name="b4" value="B">
+    <label for="b4b">Changer la couleur du tableau</label><br>
+
+    <input type="radio" id="b4c" name="b4" value="C">
+    <label for="b4c">Créer un mot de passe</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>5. La 1FN (Première forme normale) impose :</legend>
+
+    <input type="radio" id="b5a" name="b5" value="A">
+    <label for="b5a">Des valeurs atomiques dans chaque case</label><br>
+
+    <input type="radio" id="b5b" name="b5" value="B">
+    <label for="b5b">Une seule table dans la base</label><br>
+
+    <input type="radio" id="b5c" name="b5" value="C">
+    <label for="b5c">Aucune clé primaire</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>6. La 2FN consiste surtout à :</legend>
+
+    <input type="radio" id="b6a" name="b6" value="A">
+    <label for="b6a">Supprimer les dépendances partielles</label><br>
+
+    <input type="radio" id="b6b" name="b6" value="B">
+    <label for="b6b">Ajouter des couleurs aux colonnes</label><br>
+
+    <input type="radio" id="b6c" name="b6" value="C">
+    <label for="b6c">Supprimer toutes les tables</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>7. La 3FN vise à :</legend>
+
+    <input type="radio" id="b7a" name="b7" value="A">
+    <label for="b7a">Supprimer les dépendances transitives</label><br>
+
+    <input type="radio" id="b7b" name="b7" value="B">
+    <label for="b7b">Doubler les lignes</label><br>
+
+    <input type="radio" id="b7c" name="b7" value="C">
+    <label for="b7c">Interdire les clés étrangères</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>8. Si Ville dépend du CodePostal, et CodePostal dépend de ClientID, alors en 3FN il y a :</legend>
+
+    <input type="radio" id="b8a" name="b8" value="A">
+    <label for="b8a">Une dépendance transitive</label><br>
+
+    <input type="radio" id="b8b" name="b8" value="B">
+    <label for="b8b">Une clé primaire</label><br>
+
+    <input type="radio" id="b8c" name="b8" value="C">
+    <label for="b8c">Aucun problème</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>9. Quelle commande ajoute une nouvelle ligne dans une table ?</legend>
+
+    <input type="radio" id="b9a" name="b9" value="A">
+    <label for="b9a">INSERT INTO</label><br>
+
+    <input type="radio" id="b9b" name="b9" value="B">
+    <label for="b9b">DROP TABLE</label><br>
+
+    <input type="radio" id="b9c" name="b9" value="C">
+    <label for="b9c">SELECT *</label>
+
+</fieldset>
+
+<fieldset class="question">
+<legend>10. La normalisation sert principalement à :</legend>
+
+    <input type="radio" id="b10a" name="b10" value="A">
+    <label for="b10a">Réduire redondances et anomalies</label><br>
+
+    <input type="radio" id="b10b" name="b10" value="B">
+    <label for="b10b">Ralentir la base</label><br>
+
+    <input type="radio" id="b10c" name="b10" value="C">
+    <label for="b10c">Remplacer le SQL</label>
+
+</fieldset>
+
+<button type="submit" class="submit-btn">Envoyer</button>
+
+</form>
+
+</section>
+<br><br><br>
 
 <footer>
     <a href="./a_propos.html"> A propos de nous  </a>
