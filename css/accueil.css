@@ -100,56 +100,98 @@ h2 { color: #e67e22; font-size: 1.5rem; margin-bottom: 15px; }
     margin: 0 auto 40px auto;
 }
 
-/* --- FIELDSET (Menu rapide) --- */
-fieldset {
-    border: 2px solid #f0f4f8;
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 30px;
-}
-
-legend {
-    color: #1d355e;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 0 20px;
-}
-
-fieldset nav {
+/* Conteneur principal des cartes */
+.services-container {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
     flex-wrap: wrap;
-    gap: 20px;
+    background-color: #f8f9fa; /* Fond très léger pour faire ressortir les cartes blanches */
 }
 
-fieldset nav a {
-    background: #f7f9fc;
+/* Style de chaque carte */
+.service-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Ombre douce */
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Petit saut au survol */
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
     color: #1d355e;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: all 0.3s;
-    border: 1px solid #eee;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
 }
 
-fieldset nav a:hover {
+.service-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Boutons bleus arrondis */
+.btn-service {
+    display: inline-block;
     background: #1d355e;
     color: white;
-    transform: translateY(-3px);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s;
 }
 
+.btn-service:hover {
+    background: #e67e22; /* Orange au survol */
+}
 
+/* --- BANNIÈRE À PROPOS --- */
+.about-banner {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
+.about-content {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
 
+.about-img {
+    width: 300px;
+    border-radius: 10px;
+}
 
+.about-text {
+    text-align: left;
+}
 
-
-
-
-
-
+.about-text h2 {
+    color: #1d355e;
+    margin-bottom: 15px;
+}
 
 
 
