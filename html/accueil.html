@@ -4,13 +4,30 @@
 <head> <!-- Entête du document HTML -->
     <title>Accueil</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
     <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+    <link rel="stylesheet" href="../css/accueil.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head><!-- Fin de la balise d'entête --> 
 
-<body><!-- Début du code de la page web -->
-    <header>
-        <img class="logo_efrei" src="../img/efrei.png" alt="logo efrei" >
-        <img class="logo_site" src="../img/logo.png" alt="logo du site" >
-    </header>
+<body class="content-page"><!-- Début du code de la page web -->
+<header>
+    <div class="header-top">
+    <img class="logo_site" src="../img/logo2.png" alt="logo du site" >
+    <div class="search-container">
+        <input type="text" placeholder="Rechercher...">
+        
+    </div>
+    <div class="header-spacer"></div> </div>
+    <nav class="main-nav">
+        <a href="accueil.html">Accueil</a>
+        <a href="cours&formation.html">Cours&Formation</a>
+        <a href="calender.html">Calendrier</a>
+        <a href="contact.html">Contact</a>
+        
+    </nav>
+    
+    
+</header>
 <br>
 <br>
 <br>
@@ -20,12 +37,11 @@
             <div class="carrousel">
                 
                 <div class="slides">
-                    <img src="../img/image1.png" alt="Affiche événement 1" class="slide active">
-                    <img src="../img/image2.png" alt="Affiche événement 2" class="slide">
-                    <img src="../img/image3.png" alt="Affiche événement 3" class="slide">
+                    <img src="../img/image2.png" alt="Affiche événement 1" class="slide active">
+                    <img src="../img/image3.png" alt="Affiche événement 2" class="slide">
                 </div>
 
-                <button class="precedent"> < </button>
+                <button class="precedent">  </button>
                 <button class="suivant"> > </button>
             </div>
 
@@ -67,10 +83,10 @@
 <br>
 <br>
     <footer>
-    <a href="./a_propos.html"> A propos de nous  </a> <br><br>
-    <a href="./login.html"> Déconnexion  </a>
+    <a href="./a_propos.html">À propos de nous</a>
+    <a href="./login.html">Déconnexion</a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
-    </footer>
+</footer>
 </body><!-- Fin du code de la page web --> 
 </html>

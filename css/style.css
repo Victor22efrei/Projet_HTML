@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root {
+    --primary: #1d355e;
+    --primary-light: #2c5282;
+    --accent: #e67e22;
+    --accent-hover: #d35400;
+    --bg-page: #f8fafc;
+    --white: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --shadow-lg: 0 20px 25px -5px rgba(29, 53, 94, 0.1), 0 10px 10px -5px rgba(29, 53, 94, 0.04);
+    --radius: 20px;
+}
+
+
+body.content-page {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+    background-image: url('../img/Fond4.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+
+   /* HEADER */
+.content-page header {
+    background-image: url('../img/Fondecran.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+
+}
+/* --- ÉTAGE DU HAUT (Logo + Recherche) --- */
+.header-top {
+    background-color: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo à gauche */
+    padding: 0px 30%;
+    width: 100%;
+    height: 60px;
+}
+/* logo */
+.header-top .logo_site {
+    height: 65px;
+    width: auto;
+    margin-right:auto;
+    position: left;
+    margin-right: 40px; 
+}
+.header-top .search-container {
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    max-width: 800px; 
+}
+
+/* LE CONTENEUR DE LA RECHERCHE  */
+.search-container {
+    width: 50%;
+    min-width: 250px;
+    max-width: 800px;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.header-top .header-spacer {
+    flex: 1;
+}
+
+.search-container input {
+    width: 100%;
+    
+    padding: 12px 20px; 
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: #1d355e;
+    font-size: 0.9rem;
+    outline: none;
+    transition: background 0.3s;
+}
+
+/* Changement de couleur quand on clique sur la barre */
+.search-container input:focus {
+    background-color: white;
+}
+
+
+
+.search-container input::placeholder {
+    color: #1d355e;
+}
+/* --- ÉTAGE DU BAS  */
+.main-nav {
+    background-color: transparent; 
+    display: flex;
+    justify-content: center; 
+    gap: 60px;
+    padding: 12px 0;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav a {
+    color: #2251bcd9; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+
+.main-nav a:hover, .main-nav a.active {
+    color: #e67e22; 
+}
+
+/* La petite barre orange sous la page active (comme sur ta capture) */
+.main-nav a.active {
+    border-bottom: 3px solid #e67e22; 
+    padding-bottom: 9px;
+}
+
+/* --- FOND DE LA PAGE */
+body.content-page {
+    background-color: #f0f7ff; 
+}
+
+
+
+/* --- FOOTER --- */
+footer {
+    display: block;
+    background: #0f172a;
+    color: white;
+    padding: 60px 0px;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 800;
+    margin: 0 15px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    main { margin-top: 100px; padding: 0 20px; }
+    section { padding: 30px 20px; }
+    section nav ul { flex-direction: column; }
+}
+
+
+
+
+
+
+
+
+
+
+
+

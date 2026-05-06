@@ -4,13 +4,29 @@
 <head> <!-- Entête du document HTML -->
     <title>Contacts</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
     <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head><!-- Fin de la balise d'entête --> 
 
-<body><!-- Début du code de la page web -->
+<body class="content-page"><!-- Début du code de la page web -->
 
 <header>
-    <img class="logo_efrei" src="../img/efrei.png" alt="logo efrei" >
-    <img class="logo_site" src="../img/logo.png" alt="logo du site" >
+    <div class="header-top">
+    <img class="logo_site" src="../img/logo2.png" alt="logo du site" >
+    <div class="search-container">
+        <input type="text" placeholder="Rechercher...">
+        
+    </div>
+    <div class="header-spacer"></div> </div>
+    <nav class="main-nav">
+        <a href="accueil.html">Accueil</a>
+        <a href="cours&formation.html">Cours&Formation</a>
+        <a href="calender.html">Calendrier</a>
+        <a href="contact.html">Contact</a>
+        
+    </nav>
+    
+    
 </header>
 
 <section>
@@ -46,18 +62,24 @@
 <footer>
 <button id="chatbotButton" class="chatbot-button"> ? </button>
 
-<div id="messages">
-        <p>Bonjour 👋 Pose ta question.</p>
-    </div>
 
 <div id="chatBox">
-    <input type="text" placeholder="Pose ta question...">
-    <button>Envoyer</button>
-</div>
-    <a href="./accueil.html"> Return  </a>
-     <br>
-    <a href="./a_propos.html"> A propos de nous  </a>
+    <div class="chat-header">Assistant Efrei</div>
     
+    <div id="messages">
+        <p style="background: #e2e8f0; padding: 8px; border-radius: 10px; margin-bottom: 10px;">
+            Bonjour ! Pose ta question ici.
+        </p>
+    </div>
+
+    <div class="chat-input-area">
+        <input type="text" placeholder="Ecris ici...">
+        <button>➤</button>
+    </div>
+</div>
+ 
+    <a href="./a_propos.html">À propos de nous</a>
+    <a href="./login.html">Déconnexion</a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>

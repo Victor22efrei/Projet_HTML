@@ -1,0 +1,164 @@
+
+
+
+
+/* --- HEADER FIXE --- */
+header {
+    background-image: url('../img/fond.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+/* --- SECTIONS (CARTES PROFESSEURS) --- */
+section {
+    background: var(--white);
+    width: 90%;
+    max-width: 700px;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* On gère l'espace sous le header pour la première section */
+section:first-of-type {
+    margin-top: 180px; 
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h1 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+section h2 {
+    color: var(--accent);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#logo_efrei {
+    border-radius: 50%;
+    background: #f7f9fc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-weight: bold;
+    color: var(--text-main);
+    background: #f1f2f6;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* --- CHATBOT (FOOTER) --- */
+.chatbot-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: 0.3s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot-button:hover {
+    background-color: var(--accent);
+    transform: rotate(15deg);
+}
+
+#chatBox {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 15px;
+    display: none; /* Masqué par défaut (à gérer en JS) */
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+    overflow:hidden
+}
+
+/* Header bleu du chat */
+.chat-header {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#messages {
+    flex:1;
+    height: 150px;
+    overflow-y: auto;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+/* Barre de saisie */
+.chat-input-area {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    border-top: 1px solid #eee;
+}
+
+#chatBox input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+#chatBox button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
