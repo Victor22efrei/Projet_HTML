@@ -58,7 +58,50 @@
     </p>
 
 </section>
+<section class="section-contact-totale">
+    <div class="entete-large">
+        <h1>Contact & Permanences</h1>
+        <p>Envoyez un message ou réservez un créneau avec vos professeurs référents.</p>
+    </div>
 
+    <form id="formulaireContact" class="form-plein-ecran">
+        <div class="ligne-directe">
+            <div class="bloc-saisie">
+                <label>Référent concerné</label>
+                <select id="choixProf" required>
+                    <option value="Mme Badra">Madame Badra (Web)</option>
+                    <option value="Mme Chin">Madame Xiaodan Chin (Java)</option>
+                    <option value="Mr Chabchoub">Monsieur Chabchoub (BDD)</option>
+                </select>
+            </div>
+            <div class="bloc-saisie">
+                <label>Type de demande</label>
+                <select id="typeDemande" onchange="afficherChampsRdv()" required>
+                    <option value="mail">Question simple (Email)</option>
+                    <option value="permanence">Demande de permanence (RDV)</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="champsPermanence" class="ligne-directe" style="display: none;">
+            <div class="bloc-saisie">
+                <label>Date souhaitée</label>
+                <input type="date" id="dateRdv">
+            </div>
+            <div class="bloc-saisie">
+                <label>Heure</label>
+                <input type="time" id="heureRdv">
+            </div>
+        </div>
+
+        <div class="bloc-saisie">
+            <label>Votre message</label>
+            <textarea id="messageTexte" rows="2" placeholder="Écrivez votre message ici..."></textarea>
+        </div>
+
+        <button type="submit" class="bouton-envoi-large">Envoyer la demande ➤</button>
+    </form>
+</section>
 <footer>
 <button id="chatbotButton" class="chatbot-button"> ? </button>
 
@@ -82,7 +125,9 @@
     <a href="./login.html">Déconnexion</a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
+
+
 </footer>
 
-</body><!-- Fin du code de la page web --> 
+</body>
 </html>

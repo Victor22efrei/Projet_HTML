@@ -156,9 +156,94 @@ section p {
     cursor: pointer;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.section-contact-totale {
+    width: 100%;
+    position: left;
+    padding: 100px 40px; 
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.entete-large h1 {
+    font-size: clamp(2rem, 5vw, 4rem); 
+    color: #1d355e;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.form-plein-ecran {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+}
+
+.ligne-directe {
+    display: flex;
+    width: 100%;
+    gap: 60px; 
+}
+
+.bloc-saisie {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-saisie label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #1d355e;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
 
+.form-plein-ecran select, 
+.form-plein-ecran input, 
+.form-plein-ecran textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #1d355e;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
 
+.form-plein-ecran textarea {
+    resize: none;
+}
 
+.form-plein-ecran select:focus, 
+.form-plein-ecran input:focus, 
+.form-plein-ecran textarea:focus {
+    border-bottom-color: #e67e22;
+}
 
+.bouton-envoi-large {
+    width: fit-content;
+    background: #1d355e;
+    color: white;
+    padding: 20px 80px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
 
+.bouton-envoi-large:hover {
+    background: #e67e22;
+    transform: translateX(10px);
+}

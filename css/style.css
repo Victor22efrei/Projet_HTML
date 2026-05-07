@@ -179,7 +179,85 @@ footer a {
 
 
 
+.zone-reservation {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+    background: transparent; /* Pas de fond */
+}
 
+.entete-reservation h1 {
+    font-size: 3rem;
+    color: #1d355e;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-invisible {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: transparent; /* Pas de rectangle gris */
+    padding: 0; /* Pas de marge interne */
+}
+
+.ligne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.champ label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #1d355e;
+}
+
+/* Style des inputs : juste une ligne en bas ou une bordure très fine */
+.form-invisible select, 
+.form-invisible input, 
+.form-invisible textarea {
+    background: rgba(255, 255, 255, 0.5); /* Très léger pour rester lisible sur le fond */
+    border: none;
+    border-bottom: 2px solid #cbd5e1; /* Juste une ligne soulignée */
+    padding: 12px 5px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-invisible select:focus, 
+.form-invisible input:focus, 
+.form-invisible textarea:focus {
+    border-bottom-color: #e67e22; /* La ligne devient orange quand on clique */
+}
+
+.bouton-fluide {
+    align-self: flex-start; /* Le bouton ne prend pas toute la largeur */
+    background: #1d355e;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px; /* Bouton très arrondi comme sur ton exemple */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.bouton-fluide:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
 
 
 
