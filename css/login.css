@@ -11,6 +11,8 @@
     --white: #ffffff;
 }
 
+
+
 body.login-page {
 
     background-image: url('../img/Fondecran.jpeg'); 
@@ -27,6 +29,25 @@ body.login-page {
     margin: 0;
 }
 
+
+.header-login {
+    background: transparent; 
+    border-bottom: none;     
+    box-shadow: none;        
+    position: absolute;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;           
+    display: flex;
+    justify-content: flex-start; 
+
+}
+.logo-haut-gauche {
+    height: 40px;            
+    width: auto;             
+    background: transparent;
+}
 /*  HEADER du flexbox  */
 header {
     background: rgba(255, 255, 255, 0.305);;
