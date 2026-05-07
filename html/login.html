@@ -1,12 +1,13 @@
-<!DOCTYPE html> 
-<html lang="fr"> 
+<!DOCTYPE html>
+<html lang="fr">
 
-<head> 
-    <title>Connexion Efrei</title> 
-    <meta charset="UTF-8"> 
+<head>
+    <title>Connexion Efrei</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/login.css">
-    
-</head><!-- Fin de la balise d'entête --> 
+    <script src="../js/login.js"></script>
+   
+</head><!-- Fin de la balise d'entête -->
 
 
 <body class="login-page"><!-- Début du code de la page web -->
@@ -26,13 +27,13 @@
 <br>
 
 
-    
-    <form action="accueil.html" method="get">
+   
+    <form action="accueil.html" method="get" onsubmit="return verificationMail()">
     <fieldset>
         <div class="logo-container-card">
                     <img class="logo_site" src="../img/logo2.png" alt="logo du site">
         </div>
-        <legend>Connexion</legend> 
+        <legend>Connexion</legend>
         <p class="subtitle">Utiliser votre compte Efrei</p>
 
 
@@ -43,12 +44,12 @@
         <input type="password" id="mdp-connexion" placeholder="Mot de passe">
         <br>
         <input type=submit id="sign-in" value="sign-in">
-        
-    
+       
+   
     </fieldset>
     </form>
-    
-    
+   
+   
 <br>
 <br>
 <br>
@@ -61,3 +62,4 @@
 
 </body>
 </html>
+
