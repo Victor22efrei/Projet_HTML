@@ -1,62 +1,54 @@
-<!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+<!DOCTYPE html>
+<html lang="fr">
 
-<head> <!-- Entête du document HTML -->
-    <title>Contacts</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
-    <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+<head>
+    <title>Contacts</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/style.css">
-</head><!-- Fin de la balise d'entête --> 
+</head>
 
-<body class="content-page"><!-- Début du code de la page web -->
+<body class="content-page">
 
 <header>
     <div class="header-top">
-    <img class="logo_site" src="../img/logo2.png" alt="logo du site" >
-    <div class="search-container">
-        <input type="text" placeholder="Rechercher...">
-        
+        <img class="logo_site" src="../img/logo2.png" alt="logo du site">
+
+        <div class="search-container">
+            <input type="text" placeholder="Rechercher...">
+        </div>
+
+        <div class="header-spacer"></div>
     </div>
-    <div class="header-spacer"></div> </div>
+
     <nav class="main-nav">
         <a href="accueil.html">Accueil</a>
         <a href="cours&formation.html">Cours&Formation</a>
         <a href="contact.html">Contact</a>
-        
     </nav>
-    
-    
 </header>
 
 <section>
     <h1>Madame Badra</h1>
     <h2>Référente de Programmation Web 1 : HTML, CSS, JS</h2>
     <img id="logo_efrei" src="../img/efrei.png" alt="photo_de_profil1" width="100" height="100">
-    <p>
-        mail : riham.badra@efrei.fr
-    </p>
-
+    <p>mail : riham.badra@efrei.fr</p>
 </section>
 
 <section>
     <h1>Madame Xiaodan Chin</h1>
     <h2>Référente de Java 1 : Fondamentaux de la POO</h2>
     <img id="logo_efrei" src="../img/efrei.png" alt="photo_de_profil2" width="100" height="100">
-    <p>
-        mail : nathalie.xiaodan-chin@efrei.fr
-    </p>
-
+    <p>mail : nathalie.xiaodan-chin@efrei.fr</p>
 </section>
 
 <section>
     <h1>Monsieur Chabchoub</h1>
     <h2>Référent Bases de données 1 : Concepts de base</h2>
     <img id="logo_efrei" src="../img/efrei.png" alt="photo_de_profil3" width="100" height="100">
-    <p>
-        mail : chabchoub.efrei@gmail.com
-    </p>
-
+    <p>mail : chabchoub.efrei@gmail.com</p>
 </section>
+
 <section class="section-contact-totale">
     <div class="entete-large">
         <h1>Contact & Permanences</h1>
@@ -73,6 +65,7 @@
                     <option value="Mr Chabchoub">Monsieur Chabchoub (BDD)</option>
                 </select>
             </div>
+
             <div class="bloc-saisie">
                 <label>Type de demande</label>
                 <select id="typeDemande" onchange="afficherChampsRdv()" required>
@@ -87,6 +80,7 @@
                 <label>Date souhaitée</label>
                 <input type="date" id="dateRdv">
             </div>
+
             <div class="bloc-saisie">
                 <label>Heure</label>
                 <input type="time" id="heureRdv">
@@ -98,35 +92,35 @@
             <textarea id="messageTexte" rows="2" placeholder="Écrivez votre message ici..."></textarea>
         </div>
 
-        <button type="submit" class="bouton-envoi-large">Envoyer la demande ➤</button>
+        <button type="submit" class="message">Envoyer la demande ➤</button>
     </form>
 </section>
+
 <footer>
-<button id="chatbotButton" class="chatbot-button"> ? </button>
+    <a href="./a_propos.html">À propos de nous</a>
+    <a href="./login.html" class="déconnexion">Déconnexion</a>
+    <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
+    <p>Tous droits réservés.</p>
+</footer>
 
+<button id="chatbotButton" class="chatbot-button">?</button>
 
-<div id="chatBox">
+<div id="chatBox" class="chat-box hidden">
     <div class="chat-header">Assistant Efrei</div>
-    
+
     <div id="messages">
-        <p style="background: #e2e8f0; padding: 8px; border-radius: 10px; margin-bottom: 10px;">
-            Bonjour ! Pose ta question ici.
-        </p>
+        <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
     <div class="chat-input-area">
-        <input type="text" placeholder="Ecris ici...">
-        <button>➤</button>
+        <input id="chatInput" type="text" placeholder="Écris ici...">
+        <button id="sendMessage" type="button">➤</button>
     </div>
 </div>
- 
-    <a href="./a_propos.html">À propos de nous</a>
-    <a href="./login.html">Déconnexion</a>
-    <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
-    <p>Tous droits réservés.</p>
 
-
-</footer>
+<script src="../js/chatbot.js"></script>
+<script src="../js/deconnection.js"></script>
+<script src="../js/contact.js"></script>
 
 </body>
 </html>

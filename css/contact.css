@@ -105,13 +105,15 @@ section p {
     border-radius: 15px;
     box-shadow: var(--shadow);
     padding: 15px;
-    display: none; /* Masqué par défaut (à gérer en JS) */
+    display: flex; 
     flex-direction: column;
     gap: 10px;
     z-index: 9999;
     overflow:hidden
 }
-
+#chatBox.hidden {
+    display: none;
+}
 /* Header bleu du chat */
 .chat-header {
     background: var(--primary);
@@ -230,7 +232,7 @@ body {
     border-bottom-color: #e67e22;
 }
 
-.bouton-envoi-large {
+.message{
     width: fit-content;
     background: #1d355e;
     color: white;
@@ -243,7 +245,7 @@ body {
     transition: 0.4s;
 }
 
-.bouton-envoi-large:hover {
+.message:hover {
     background: #e67e22;
     transform: translateX(10px);
 }

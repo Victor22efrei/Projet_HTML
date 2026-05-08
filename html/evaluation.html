@@ -514,10 +514,27 @@
 </section>
 <footer>
     <a href="./a_propos.html"> A propos de nous  </a>
-    <a href="./login.html"> Déconnexion  </a>
+    <a href="./login.html" class="déconnexion"> Déconnexion  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>
+<button id="chatbotButton" class="chatbot-button">?</button>
+
+<div id="chatBox" class="chat-box hidden">
+    <div class="chat-header">Assistant Efrei</div>
+
+    <div id="messages">
+        <p class="bot-message">Bonjour ! Pose ta question ici.</p>
+    </div>
+
+    <div class="chat-input-area">
+        <input id="chatInput" type="text" placeholder="Écris ici...">
+        <button id="sendMessage" type="button">➤</button>
+    </div>
+</div>
+
+
+<script src="../js/chatbot.js"></script>
 <script src="../js/evaluation.js"></script>
 </body><!-- Fin du code de la page web --> 
 </html>

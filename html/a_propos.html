@@ -36,7 +36,7 @@
 <section id="Teddy">
     <h1>Teddy</h1>
     <h2>Responsable Intéraction</h2>
-    <img id="logo_efrei" src="../img/efrei.png" alt="photo_de_profil3" width="100" height="100">
+    <img id="photo_teddy" src="../img/teddy.jpeg" alt="photo de profil de Teddy" >
     <p>
         Teddy est l'un des co-fondateur du site web, il est en deuxieme année de classe préparatoire.
         Lors de ce projet il s'est occupé de l'intégralité des interactions entre le site web et l'utilisateur donc de la partie Java Script.
@@ -48,7 +48,24 @@
     <a href="./accueil.html"> Return  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
-    </footer>
+</footer>
+<button id="chatbotButton" class="chatbot-button">?</button>
+
+<div id="chatBox" class="chat-box hidden">
+    <div class="chat-header">Assistant Efrei</div>
+
+    <div id="messages">
+        <p class="bot-message">Bonjour ! Pose ta question ici.</p>
+    </div>
+
+    <div class="chat-input-area">
+        <input id="chatInput" type="text" placeholder="Écris ici...">
+        <button id="sendMessage" type="button">➤</button>
+    </div>
+</div>
+
+
+<script src="../js/chatbot.js"></script>
 </body><!-- Fin du code de la page web --> 
 </html>
 

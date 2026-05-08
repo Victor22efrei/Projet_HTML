@@ -57,7 +57,7 @@ body.content-page {
 }
 
 /* --- PHOTOS (Rondes) --- */
-#photo_selene, #photo_victor, #logo_efrei {
+#photo_selene, #photo_victor, #photo_teddy {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Force la forme ronde */
