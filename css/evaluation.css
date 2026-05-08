@@ -138,7 +138,7 @@ h2 {
     box-shadow: var(--shadow);
 }
 
-.start-btn {
+.start-btn{
     background: #27ae60;
     color: white;
     border: none;
@@ -194,4 +194,8 @@ footer a {
         margin-bottom: 20px;
     }
     h1 { margin-top: 40px; }
+}
+
+.hidden {
+    display: none;
 }

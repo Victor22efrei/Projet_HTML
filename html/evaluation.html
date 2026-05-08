@@ -27,7 +27,8 @@
 </header>
 
 
-<body><!-- Début du code de la page web -->
+<body><!-- Début du code de la page web -->
+   
 
 <h1>Évaluation:</h1>
 
@@ -36,11 +37,15 @@
     
 <section>
 
+
+<section class="qcm" id="qcm1">
+
+
 <h3 class="titre_QCM">Évaluation de HTML, CSS, JavaScript.</h3>
-<button class="start-btn">Start</button>
-<div class="timer">Temps : <span>30:00</span></div>
+<button type="button" class="start-btn">Start</button>
+<div class="timer">Temps : <span>2:00</span></div>
 <br><br>
-<form class="questions">
+<form class="questions hidden">
 
 <fieldset class="question">
 <legend>1. Que signifie HTML ?</legend>
@@ -187,18 +192,21 @@
 </fieldset>
 
 <button type="submit" class="submit-btn">Envoyer</button>
+<p class="score"></p>
 
 </form>
+</section>
 <br><br><br>
 
 
 <section class="qcm" id="qcm2">
 
+
 <h3 class="titre_QCM">Évaluation de Java</h3>
-<button class="start-btn">Start</button>
-<div class="timer">Temps : <span>30:00</span></div>
+<button type="button" class="start-btn">Start</button>
+<div class="timer">Temps : <span>2:00</span></div>
 <br><br>
-<form class="questions">
+<form class="questions hidden">
 
 <fieldset class="question">
 <legend>1. Quel mot-clé permet de créer une classe en Java ?</legend>
@@ -341,6 +349,7 @@
 </fieldset>
 
 <button type="submit" class="submit-btn">Envoyer</button>
+<p class="score"></p>
 
 </form>
 
@@ -350,10 +359,10 @@
 <section class="qcm" id="qcm3">
 
 <h3 class="titre_QCM">Évaluation de Base de donnée</h3>
-<button class="start-btn">Start</button>
-<div class="timer">Temps : <span>30:00</span></div>
+<button type="button" class="start-btn">Start</button>
+<div class="timer">Temps : <span>2:00</span></div>
 <br><br>
-<form class="questions">
+<form class="questions hidden">
 
 <fieldset class="question">
 <legend>1. Une base de données sert principalement à :</legend>
@@ -496,6 +505,7 @@
 </fieldset>
 
 <button type="submit" class="submit-btn">Envoyer</button>
+<p class="score"></p>
 
 </form>
 
@@ -508,5 +518,6 @@
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>
+<script src="../js/evaluation.js"></script>
 </body><!-- Fin du code de la page web --> 
 </html>
