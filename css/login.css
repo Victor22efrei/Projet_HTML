@@ -31,23 +31,45 @@ body.login-page {
 
 
 .header-login {
-    background: transparent; 
-    border-bottom: none;     
-    box-shadow: none;        
-    position: absolute;      
+
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
+
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px;           
-    display: flex;
-    justify-content: flex-start; 
 
+    width: 100%;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
 }
+
 .logo-haut-gauche {
-    height: 40px;            
-    width: auto;             
-    background: transparent;
+
+    position: absolute;
+    left: 40px;
+
+    height: 50px;
+    width: auto;
 }
+
+.titre_site {
+
+    color: #0c5fb2;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
 /*  HEADER du flexbox  */
 header {
     background: rgba(255, 255, 255, 0.305);;

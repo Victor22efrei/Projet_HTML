@@ -4,8 +4,19 @@
     box-sizing: border-box; /* Pour que padding + border n'augmentent pas la taille */
 }
 
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
 
-
+.titre_site {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
 
 :root {
     --primary: #1d355e;
@@ -22,15 +33,17 @@ body.content-page {
     background-attachment: fixed;
 
     font-family: 'Segoe UI', sans-serif;
-    
-    
-    display: flex; 
-    justify-content: center; 
-    align-items: flex-start; 
-    flex-wrap: wrap; 
-    gap: 30px; 
-    padding-top: 200px;
-    padding-bottom: 0;
+
+    width: 100%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
     width: 100%;
 }
 
