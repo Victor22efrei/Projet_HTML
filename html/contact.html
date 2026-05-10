@@ -1,37 +1,46 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Langue de la page : français -->
 
-<head>
-    <title>Contacts</title>
-    <meta charset="UTF-8">
+<head> <!-- En-tête du document HTML -->
+    <title>Contacts</title> <!-- Titre affiché dans l’onglet du navigateur -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+
+    <!-- Liens vers les fichiers CSS -->
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="content-page">
+<body class="content-page"> <!-- Corps de la page -->
 
+<!-- HEADER -->
 <header>
 
+    <!-- Titre principal du site -->
     <p class="titre_site">
         Site internet du département informatique de l'Efrei
     </p>
 
+    <!-- Partie haute du header : logo, recherche et logo EFREI -->
     <div class="header-top">
 
+        <!-- Logo du site -->
         <img class="logo_site"
              src="../img/logo2.png"
              alt="logo du site">
 
+        <!-- Barre de recherche -->
         <div class="search-container">
             <input type="text" placeholder="Rechercher...">
         </div>
 
+        <!-- Logo EFREI -->
         <img class="logo_efrei"
              src="../img/efreilogovrai.png"
              alt="logo efrei">
 
     </div>
 
+    <!-- Menu de navigation -->
     <nav class="main-nav">
         <a href="accueil.html">Accueil</a>
         <a href="cours&formation.html">Cours&Formation</a>
@@ -40,6 +49,7 @@
 
 </header>
 
+<!-- Carte de contact de Madame Badra -->
 <section>
     <h1>Madame Badra</h1>
     <h2>Référente de Programmation Web 1 : HTML, CSS, JS</h2>
@@ -47,6 +57,7 @@
     <p>mail : riham.badra@efrei.fr</p>
 </section>
 
+<!-- Carte de contact de Madame Xiaodan Chin -->
 <section>
     <h1>Madame Xiaodan Chin</h1>
     <h2>Référente de Java 1 : Fondamentaux de la POO</h2>
@@ -54,6 +65,7 @@
     <p>mail : nathalie.xiaodan-chin@efrei.fr</p>
 </section>
 
+<!-- Carte de contact de Monsieur Chabchoub -->
 <section>
     <h1>Monsieur Chabchoub</h1>
     <h2>Référent Bases de données 1 : Concepts de base</h2>
@@ -61,14 +73,22 @@
     <p>mail : chabchoub.efrei@gmail.com</p>
 </section>
 
+<!-- Section du formulaire de contact et de demande de permanence -->
 <section class="section-contact-totale">
+
+    <!-- En-tête du formulaire -->
     <div class="entete-large">
         <h1>Contact & Permanences</h1>
         <p>Envoyez un message ou réservez un créneau avec vos professeurs référents.</p>
     </div>
 
+    <!-- Formulaire principal -->
     <form id="formulaireContact" class="form-plein-ecran">
+
+        <!-- Première ligne du formulaire : choix du professeur et type de demande -->
         <div class="ligne-directe">
+
+            <!-- Choix du professeur référent -->
             <div class="bloc-saisie">
                 <label>Référent concerné</label>
                 <select id="choixProf" required>
@@ -78,6 +98,7 @@
                 </select>
             </div>
 
+            <!-- Choix du type de demande -->
             <div class="bloc-saisie">
                 <label>Type de demande</label>
                 <select id="typeDemande" onchange="afficherChampsRdv()" required>
@@ -87,27 +108,34 @@
             </div>
         </div>
 
+        <!-- Champs affichés uniquement pour une demande de permanence -->
         <div id="champsPermanence" class="ligne-directe" style="display: none;">
+
+            <!-- Date du rendez-vous -->
             <div class="bloc-saisie">
                 <label>Date souhaitée</label>
                 <input type="date" id="dateRdv">
             </div>
 
+            <!-- Heure du rendez-vous -->
             <div class="bloc-saisie">
                 <label>Heure</label>
                 <input type="time" id="heureRdv">
             </div>
         </div>
 
+        <!-- Message de l'utilisateur -->
         <div class="bloc-saisie">
             <label>Votre message</label>
             <textarea id="messageTexte" rows="2" placeholder="Écrivez votre message ici..."></textarea>
         </div>
 
+        <!-- Bouton d’envoi du formulaire -->
         <button type="submit" class="message">Envoyer la demande ➤</button>
     </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
     <a href="./a_propos.html">À propos de nous</a>
     <a href="./login.html" class="déconnexion">Déconnexion</a>
@@ -115,21 +143,28 @@
     <p>Tous droits réservés.</p>
 </footer>
 
+<!-- Bouton d’ouverture du chatbot -->
 <button id="chatbotButton" class="chatbot-button">?</button>
 
+<!-- Fenêtre du chatbot -->
 <div id="chatBox" class="chat-box hidden">
+
+    <!-- En-tête du chatbot -->
     <div class="chat-header">Assistant Efrei</div>
 
+    <!-- Zone des messages -->
     <div id="messages">
         <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
+    <!-- Zone de saisie du message -->
     <div class="chat-input-area">
         <input id="chatInput" type="text" placeholder="Écris ici...">
         <button id="sendMessage" type="button">➤</button>
     </div>
 </div>
 
+<!-- Scripts JavaScript -->
 <script src="../js/chatbot.js"></script>
 <script src="../js/deconnection.js"></script>
 <script src="../js/contact.js"></script>

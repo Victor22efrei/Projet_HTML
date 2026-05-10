@@ -1,61 +1,78 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Langue de la page : français -->
 
-<head>
-    <title>Connexion Efrei</title>
-    <meta charset="UTF-8">
+<head> <!-- En-tête du document HTML -->
+    <title>Connexion Efrei</title> <!-- Titre affiché dans l’onglet du navigateur -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+
+    <!-- Lien vers le fichier CSS de connexion -->
     <link rel="stylesheet" href="../css/login.css">
+
+    <!-- Lien vers le fichier JavaScript de connexion -->
     <script src="../js/login.js"></script>
-   
-</head><!-- Fin de la balise d'entête -->
+</head> <!-- Fin de la balise d'en-tête -->
 
+<body class="login-page"> <!-- Début du contenu visible de la page -->
 
-<body class="login-page"><!-- Début du code de la page web -->
-
-
+<!-- HEADER DE CONNEXION -->
 <header class="header-login">
+
+    <!-- Titre principal du site -->
     <p class="titre_site">Site internet du département informatique de l'Efrei</p>
+
+    <!-- Logo EFREI placé en haut -->
     <img src="../img/efreilogovrai.png" alt="logo de l'efrei" class="logo-haut-gauche">
+
 </header>
 
-
-
-
-
+<!-- Espacements -->
 <br>
 <br>
 <br>
 <br>
 
+<!-- Formulaire de connexion -->
+<form action="accueil.html" method="get" onsubmit="return verificationMail()">
 
-   
-    <form action="accueil.html" method="get" onsubmit="return verificationMail()">
+    <!-- Encadrement du formulaire -->
     <fieldset>
+
+        <!-- Logo du site dans la carte de connexion -->
         <div class="logo-container-card">
-                    <img class="logo_site" src="../img/logo2.png" alt="logo du site">
+            <img class="logo_site" src="../img/logo2.png" alt="logo du site">
         </div>
+
+        <!-- Titre du formulaire -->
         <legend>Connexion</legend>
+
+        <!-- Sous-titre du formulaire -->
         <p class="subtitle">Utiliser votre compte Efrei</p>
 
-
+        <!-- Champ identifiant -->
         <label for="Id-connexion">Identifiant</label>
         <input type="text" id="Id-connexion" placeholder="nom.prenom@mail.com">
+
         <br>
+
+        <!-- Champ mot de passe -->
         <label for="mdp-connexion">Mot de passe</label>
         <input type="password" id="mdp-connexion" placeholder="Mot de passe">
+
         <br>
-        <input type=submit id="sign-in" value="sign-in">
-       
+
+        <!-- Bouton de connexion -->
+        <input type="submit" id="sign-in" value="sign-in">
    
     </fieldset>
-    </form>
-   
-   
+</form>
+
+<!-- Espacements -->
 <br>
 <br>
 <br>
 <br>
 
+<!-- FOOTER -->
 <footer>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
@@ -63,4 +80,3 @@
 
 </body>
 </html>
-

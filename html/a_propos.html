@@ -1,78 +1,86 @@
-<!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Précision de la langue pour le navigateur -->
 
-<head> <!-- Entête du document HTML -->
-    <title>À propos</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
-    <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
-    <link rel="stylesheet" href="../css/a_propos.css">
-</head><!-- Fin de la balise d'entête --> 
+<head> <!-- En-tête du document HTML -->
+    <title>À propos</title> <!-- Titre affiché dans l’onglet du navigateur --> 
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+    <link rel="stylesheet" href="../css/a_propos.css"> <!-- Lien vers le fichier CSS -->
+</head> <!-- Fin de la balise d'en-tête --> 
 
-<body class="content-page">
+<body class="content-page"> <!-- Corps de la page -->
+
+<!-- En-tête du site -->
 <header>
     <p class="titre_site">Site internet du département informatique de l'Efrei</p>
 </header>
 
+<!-- Conteneur des cartes de présentation -->
 <div class="cards-container">
 
+<!-- Carte de présentation de Selene -->
 <section id="selene">
     
     <h1>Selene</h1>
     <h2>Responsable Design</h2>
-    <img id="photo_selene" src="../img/selene.png" alt="photo de profil de Selene" >
+    <img id="photo_selene" src="../img/selene.png" alt="photo de profil de Selene">
     <p>
         Selene est une des co-fondatrice du site web, elle est en deuxieme année de classe préparatoire. 
         Lors de ce projet elle est la responsable de la mise en forme du projet en s'occupant de la partie CSS et a effectué la maquette finale 
-
     </p>
 </section>
 
+<!-- Carte de présentation de Victor -->
 <section id="Victor">
     <h1>Victor</h1>
     <h2>Responsable Projet et Git</h2>
-    <img id="photo_victor" src="../img/victor.png" alt="photo de profil de Victor" >
+    <img id="photo_victor" src="../img/victor.png" alt="photo de profil de Victor">
     <p>
         Victor est l'un des co-fondateur du site web, il est en deuxieme année de classe préparatoire.
         Lors de ce projet il s'est occupé du Git-hub et de la partie HTML du projet il a donc effectué les bases du projet 
     </p>
-
 </section>
 
+<!-- Carte de présentation de Teddy -->
 <section id="Teddy">
     <h1>Teddy</h1>
     <h2>Responsable Intéraction</h2>
-    <img id="photo_teddy" src="../img/teddy.jpeg" alt="photo de profil de Teddy" >
+    <img id="photo_teddy" src="../img/teddy.jpeg" alt="photo de profil de Teddy">
     <p>
         Teddy est l'un des co-fondateur du site web, il est en deuxieme année de classe préparatoire.
         Lors de ce projet il s'est occupé de l'intégralité des interactions entre le site web et l'utilisateur donc de la partie Java Script.
     </p>
-
 </section>
 
 </div>
 
+<!-- Pied de page -->
 <footer>
     <a href="./accueil.html"> Return  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>
+
+<!-- Bouton permettant d’ouvrir le chatbot -->
 <button id="chatbotButton" class="chatbot-button">?</button>
 
+<!-- Fenêtre du chatbot -->
 <div id="chatBox" class="chat-box hidden">
     <div class="chat-header">Assistant Efrei</div>
 
+    <!-- Zone d’affichage des messages -->
     <div id="messages">
         <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
+    <!-- Zone de saisie du message -->
     <div class="chat-input-area">
         <input id="chatInput" type="text" placeholder="Écris ici...">
         <button id="sendMessage" type="button">➤</button>
     </div>
 </div>
 
-
+<!-- Lien vers le fichier JavaScript du chatbot -->
 <script src="../js/chatbot.js"></script>
-</body><!-- Fin du code de la page web --> 
+
+</body> <!-- Fin du corps de la page --> 
 </html>
-
-

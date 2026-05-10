@@ -1,8 +1,6 @@
-
-
-
-
 /* --- HEADER FIXE --- */
+
+/* Header fixé en haut de la page avec une image de fond */
 header {
     background-image: url('../img/fond.jpeg'); 
     background-size: cover;
@@ -15,6 +13,8 @@ header {
 }
 
 /* --- SECTIONS (CARTES PROFESSEURS) --- */
+
+/* Style général des cartes de professeurs */
 section {
     background: var(--white);
     width: 90%;
@@ -30,21 +30,24 @@ section {
     transition: transform 0.3s ease;
 }
 
-/* On gère l'espace sous le header pour la première section */
+/* Espace sous le header pour la première section */
 section:first-of-type {
     margin-top: 180px; 
 }
 
+/* Effet de zoom léger au survol d’une section */
 section:hover {
     transform: scale(1.02);
 }
 
+/* Titre principal dans une section */
 section h1 {
     color: var(--primary);
     font-size: 1.8rem;
     margin-bottom: 5px;
 }
 
+/* Sous-titre dans une section */
 section h2 {
     color: var(--accent);
     font-size: 1rem;
@@ -53,6 +56,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
+/* Logo EFREI */
 #logo_efrei {
     border-radius: 50%;
     background: #f7f9fc;
@@ -60,6 +64,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/* Texte dans les sections */
 section p {
     font-weight: bold;
     color: var(--text-main);
@@ -69,6 +74,8 @@ section p {
 }
 
 /* --- CHATBOT (FOOTER) --- */
+
+/* Bouton flottant du chatbot */
 .chatbot-button {
     position: fixed;
     bottom: 30px;
@@ -90,11 +97,13 @@ section p {
     justify-content: center;
 }
 
+/* Effet au survol du bouton chatbot */
 .chatbot-button:hover {
     background-color: var(--accent);
     transform: rotate(15deg);
 }
 
+/* Fenêtre principale du chatbot */
 #chatBox {
     position: fixed;
     bottom: 100px;
@@ -111,9 +120,12 @@ section p {
     z-index: 9999;
     overflow:hidden
 }
+
+/* Classe qui cache la fenêtre du chatbot */
 #chatBox.hidden {
     display: none;
 }
+
 /* Header bleu du chat */
 .chat-header {
     background: var(--primary);
@@ -125,6 +137,7 @@ section p {
     justify-content: space-between;
 }
 
+/* Zone d’affichage des messages */
 #messages {
     flex:1;
     height: 150px;
@@ -133,6 +146,7 @@ section p {
     padding-bottom: 10px;
     font-size: 0.9rem;
 }
+
 /* Barre de saisie */
 .chat-input-area {
     padding: 10px;
@@ -141,6 +155,7 @@ section p {
     border-top: 1px solid #eee;
 }
 
+/* Champ de saisie du chatbot */
 #chatBox input {
     padding: 10px;
     border: 1px solid #ddd;
@@ -148,7 +163,7 @@ section p {
     outline: none;
 }
 
-
+/* Bouton d’envoi du chatbot */
 #chatBox button {
     background: var(--primary);
     color: white;
@@ -158,12 +173,14 @@ section p {
     cursor: pointer;
 }
 
+/* Réglages généraux du body */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
 }
 
+/* Section complète du formulaire de contact */
 .section-contact-totale {
     width: 100%;
     position: left;
@@ -172,6 +189,7 @@ body {
     background: transparent;
 }
 
+/* Grand titre de l’en-tête du formulaire */
 .entete-large h1 {
     font-size: clamp(2rem, 5vw, 4rem); 
     color: #1d355e;
@@ -179,6 +197,7 @@ body {
     text-align: left;
 }
 
+/* Formulaire affiché sur toute la largeur */
 .form-plein-ecran {
     width: 100%;
     display: flex;
@@ -186,18 +205,21 @@ body {
     gap: 50px; 
 }
 
+/* Ligne contenant plusieurs champs */
 .ligne-directe {
     display: flex;
     width: 100%;
     gap: 60px; 
 }
 
+/* Bloc contenant un label et un champ */
 .bloc-saisie {
     flex: 1; 
     display: flex;
     flex-direction: column;
 }
 
+/* Labels des champs du formulaire */
 .bloc-saisie label {
     font-weight: bold;
     text-transform: uppercase;
@@ -207,7 +229,7 @@ body {
     letter-spacing: 1px;
 }
 
-
+/* Style général des champs du formulaire */
 .form-plein-ecran select, 
 .form-plein-ecran input, 
 .form-plein-ecran textarea {
@@ -222,16 +244,19 @@ body {
     transition: border-color 0.3s;
 }
 
+/* Empêche le redimensionnement de la zone de texte */
 .form-plein-ecran textarea {
     resize: none;
 }
 
+/* Changement de couleur quand un champ est sélectionné */
 .form-plein-ecran select:focus, 
 .form-plein-ecran input:focus, 
 .form-plein-ecran textarea:focus {
     border-bottom-color: #e67e22;
 }
 
+/* Bouton d’envoi du message */
 .message{
     width: fit-content;
     background: #1d355e;
@@ -245,6 +270,7 @@ body {
     transition: 0.4s;
 }
 
+/* Animation du bouton d’envoi au survol */
 .message:hover {
     background: #e67e22;
     transform: translateX(10px);

@@ -1,7 +1,6 @@
-
-
-
 /* --- HEADER FIXE --- */
+
+/* Barre de navigation fixée en haut de la page */
 header {
     
     background-size: cover;
@@ -9,11 +8,13 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* Permet au header de rester au-dessus des autres éléments */
     box-shadow: var(--shadow);
 }
 
 /* --- LE CALENDRIER (LA CARTE) --- */
+
+/* Conteneur principal du calendrier */
 .calendar {
     background: var(--white);
     width: 90%;
@@ -25,14 +26,17 @@ header {
 }
 
 /* --- EN-TÊTE DU CALENDRIER (Mois + Boutons) --- */
+
+/* Zone contenant le mois et les boutons précédent/suivant */
 .calendar .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    background: transparent; /* Pour éviter de hériter du fond du header principal */
+    background: transparent; /* Empêche l’héritage du fond du header principal */
 }
 
+/* Sélecteur du mois */
 #month {
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -42,10 +46,11 @@ header {
     border-radius: 12px;
     cursor: pointer;
     outline: none;
-    appearance: none; /* Enlève la flèche par défaut */
+    appearance: none; /* Supprime la flèche par défaut du select */
     text-align: center;
 }
 
+/* Boutons précédent et suivant */
 #prev, #next {
     background: var(--primary);
     color: white;
@@ -60,12 +65,15 @@ header {
     justify-content: center;
 }
 
+/* Effet au survol des boutons */
 #prev:hover, #next:hover {
     background: var(--accent);
     transform: scale(1.1);
 }
 
 /* --- STRUCTURE DES JOURS --- */
+
+/* Ligne des noms des jours */
 .days-name {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -77,6 +85,7 @@ header {
     font-size: 0.8rem;
 }
 
+/* Grille contenant tous les jours du mois */
 .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -84,8 +93,10 @@ header {
 }
 
 /* --- CHAQUE CASE DE JOUR --- */
+
+/* Style général des cases de jours */
 .days div {
-    aspect-ratio: 1 / 1; /* Cases bien carrées */
+    aspect-ratio: 1 / 1; /* Rend les cases parfaitement carrées */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,23 +107,15 @@ header {
     border: 1px solid #f0f0f0;
 }
 
+/* Effet au survol des jours */
 .days div:hover {
     background: var(--bg-page);
     color: var(--accent);
     border-color: var(--accent);
 }
 
-/* Jour actuel (à gérer via ton JS) */
+/* Jour actuel (géré via JavaScript) */
 .days div.today {
     background: var(--primary);
     color: white;
 }
-
-
-
-
-
-
-
-
-

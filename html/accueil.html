@@ -1,38 +1,52 @@
-<!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Précision de la langue pour le navigateur -->
 
-<head> <!-- Entête du document HTML -->
-    <title>Accueil</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
-    <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+<head> <!-- En-tête du document HTML -->
+    
+    <title>Accueil</title> <!-- Titre affiché dans l’onglet du navigateur --> 
+    
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+
+    <!-- Feuilles de style CSS -->
     <link rel="stylesheet" href="../css/accueil.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Script JavaScript principal de la page d’accueil -->
     <script src="../js/accueil.js"></script>
 
-</head><!-- Fin de la balise d'entête --> 
+</head> <!-- Fin de la balise d'en-tête --> 
 
-<body class="content-page"><!-- Début du code de la page web -->
+<body class="content-page"> <!-- Début du contenu de la page -->
+
+<!-- HEADER -->
 <header>
 
+    <!-- Titre principal du site -->
     <p class="titre_site">
         Site internet du département informatique de l'Efrei
     </p>
 
+    <!-- Partie haute du header -->
     <div class="header-top">
 
+        <!-- Logo du site -->
         <img class="logo_site"
              src="../img/logo2.png"
              alt="logo du site">
 
+        <!-- Barre de recherche -->
         <div class="search-container">
             <input type="text" placeholder="Rechercher...">
         </div>
 
+        <!-- Logo Efrei -->
         <img class="logo_efrei"
              src="../img/efreilogovrai.png"
              alt="logo efrei">
 
     </div>
 
+    <!-- Barre de navigation -->
     <nav class="main-nav">
         <a href="accueil.html">Accueil</a>
         <a href="cours&formation.html">Cours&Formation</a>
@@ -41,108 +55,196 @@
 
 </header>
 
+<!-- Espacements -->
 <br>
 <br>
 <br>
 <br>
-    <section class="carrousel-section">
+
+<!-- SECTION CARROUSEL -->
+<section class="carrousel-section">
             
-            <div class="carrousel">
+    <div class="carrousel">
                 
-                <div class="slides">
-                    <img id="photo" src="../img/efrei.jpeg" alt="Affiche événement 1" class="slide active">
-                    <img src="../img/diplome.jpeg" alt="Affiche événement 2" class="slide">
-                    <img src="../img/image1.png" alt="Affiche événement 3" class="slide">
-                </div>
+        <!-- Images du carrousel -->
+        <div class="slides">
+            <img id="photo" src="../img/efrei.jpeg" alt="Affiche événement 1" class="slide active">
+            <img src="../img/diplome.jpeg" alt="Affiche événement 2" class="slide">
+            <img src="../img/image1.png" alt="Affiche événement 3" class="slide">
+        </div>
 
-                <button class="precedent" onclick="changementImage()">  </button>
-                <button class="suivant" onclick="changementImage()">  </button>
-            </div>
+        <!-- Boutons de navigation du carrousel -->
+        <button class="precedent" onclick="changementImage()">  </button>
+        <button class="suivant" onclick="changementImage()">  </button>
+    </div>
 
-            <div class="indicateurs">
-                <span class="point active"></span>
-                <span class="point"></span>
-                <span class="point"></span>
-            </div>
+    <!-- Indicateurs du carrousel -->
+    <div class="indicateurs">
+        <span class="point active"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+    </div>
         
-    </section>
+</section>
 
-    <section> <h1>Bienvenue au département informatique Efrei</h1>
+<!-- SECTION DE PRÉSENTATION -->
+<section>
+
+    <!-- Titre principal -->
+    <h1>Bienvenue au département informatique Efrei</h1>
+
     <br>
 
+    <!-- Sous-titre -->
     <h2>Présentation du site</h2>
-    <div class="presentation-text"> Ce site regroupe l’ensemble des cours du module informatique de l’Efrei.
+
+    <!-- Texte de présentation -->
+    <div class="presentation-text">
+        Ce site regroupe l’ensemble des cours du module informatique de l’Efrei.
         Vous y trouverez des ressources, un suivi pédagogique et des outils pour vous préparer aux évaluations.
     </div>
     
+    <!-- SECTION SERVICES -->
     <section class="services-container">
-    <div class="service-card">
-        <img src="../img/cours.jpeg" alt="Cours">
-        <h3>Apprenez vos cours</h3>
-        <p>Accédez à l'ensemble des ressources pédagogiques et modules de formation.</p>
-        <a href="./cours&formation.html" class="btn-service">En savoir plus</a>
-    </div>
 
-    <div class="service-card">
-        <img src="../img/qcm.jpeg" alt="QCM">
-        <h3>Évaluez-vous</h3>
-        <p>Testez vos connaissances avec nos QCM interactifs et préparations aux examens.</p>
-        <a href="./evaluation.html" class="btn-service">En savoir plus</a>
-    </div>
+        <!-- Carte des cours -->
+        <div class="service-card">
+            <img src="../img/cours.jpeg" alt="Cours">
+            <h3>Apprenez vos cours</h3>
+            <p>
+                Accédez à l'ensemble des ressources pédagogiques et modules de formation.
+            </p>
 
-  
-</section>
-
-<section class="about-banner">
-    <div class="about-content">
-        <img src="../img/logo2.png" alt="Efrei" class="about-img">
-        <div class="about-text">
-            <h2>À Propos de Nous</h2>
-            <p>L'Innovation au service de votre succès. Notre plateforme accompagne les étudiants de l'Efrei dans leur réussite académique.</p>
-            <br>
-            <a href="./a_propos.html" class="btn-service">En savoir plus sur nous</a>
+            <a href="./cours&formation.html" class="btn-service">
+                En savoir plus
+            </a>
         </div>
-    </div>
+
+        <!-- Carte des évaluations -->
+        <div class="service-card">
+            <img src="../img/qcm.jpeg" alt="QCM">
+
+            <h3>Évaluez-vous</h3>
+
+            <p>
+                Testez vos connaissances avec nos QCM interactifs et préparations aux examens.
+            </p>
+
+            <a href="./evaluation.html" class="btn-service">
+                En savoir plus
+            </a>
+        </div>
+
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section class="about-banner">
+
+        <div class="about-content">
+
+            <!-- Image de présentation -->
+            <img src="../img/logo2.png" alt="Efrei" class="about-img">
+
+            <!-- Texte de présentation -->
+            <div class="about-text">
+
+                <h2>À Propos de Nous</h2>
+
+                <p>
+                    L'Innovation au service de votre succès. 
+                    Notre plateforme accompagne les étudiants de l'Efrei dans leur réussite académique.
+                </p>
+
+                <br>
+
+                <!-- Bouton vers la page À propos -->
+                <a href="./a_propos.html" class="btn-service">
+                    En savoir plus sur nous
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
 </section>
-</section>
+
+<!-- Espacements -->
 <br>
 <br>
 <br>
 <br>
 <br>
+
+<!-- SECTION CARTE GOOGLE MAPS -->
 <h2> Où nous retrouver</h2>
+
 <div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.711843130283!2d2.3611394!3d48.789173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e660503f19%3A0x679093033f6d5420!2sEfrei!5e0!3m2!1sfr!2sfr!4v1715000000000!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <!-- Carte Google Maps intégrée -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.711843130283!2d2.3611394!3d48.789173!2m3!1f0!2f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e660503f19%3A0x679093033f6d5420!2sEfrei!5e0!3m2!1sfr!2sfr!4v1715000000000!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
 </div>
+
+<!-- Espacements -->
 <br>
 <br>
 <br>
 <br>
 
+<!-- FOOTER -->
+<footer>
 
-    <footer>
+    <!-- Liens du footer -->
     <a href="./a_propos.html">À propos de nous</a>
-    <a href="./login.html" class="déconnexion"> Déconnexion  </a>
+
+    <a href="./login.html" class="déconnexion">
+        Déconnexion
+    </a>
+
+    <!-- Informations de copyright -->
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
+
 </footer>
+
+<!-- Bouton du chatbot -->
 <button id="chatbotButton" class="chatbot-button">?</button>
 
+<!-- Fenêtre du chatbot -->
 <div id="chatBox" class="chat-box hidden">
+
+    <!-- En-tête du chatbot -->
     <div class="chat-header">Assistant Efrei</div>
 
+    <!-- Zone des messages -->
     <div id="messages">
         <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
+    <!-- Zone de saisie -->
     <div class="chat-input-area">
         <input id="chatInput" type="text" placeholder="Écris ici...">
+
         <button id="sendMessage" type="button">➤</button>
     </div>
+
 </div>
 
-
+<!-- Script du chatbot -->
 <script src="../js/chatbot.js"></script>
+
+<!-- Script de déconnexion -->
 <script src="../js/deconnection.js"></script>
-</body><!-- Fin du code de la page web --> 
+
+</body> <!-- Fin du contenu de la page web --> 
+
 </html>

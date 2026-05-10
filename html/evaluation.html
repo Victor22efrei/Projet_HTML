@@ -1,39 +1,45 @@
-<!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Langue de la page : français -->
 
-<head> <!-- Entête du document HTML -->
-    <title>Évaluation</title> <!-- Indique au navigateur quel titre vous donnez à votre page --> 
-    <meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
+<head> <!-- En-tête du document HTML -->
+    <title>Évaluation</title> <!-- Titre affiché dans l’onglet du navigateur --> 
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
+
+    <!-- Lien vers le fichier CSS de la page évaluation -->
     <link rel="stylesheet" href="../css/evaluation.css">
+</head> <!-- Fin de la balise d'en-tête --> 
 
-</head><!-- Fin de la balise d'entête --> 
+<body class="content-page"> <!-- Début du contenu visible de la page -->
 
+<!-- HEADER -->
+<header>
 
-
-<body class="content-page"><!-- Début du code de la page web -->
-
-    <header>
-
+    <!-- Titre principal du site -->
     <p class="titre_site">
         Site internet du département informatique de l'Efrei
     </p>
 
+    <!-- Partie haute du header : logo, barre de recherche et logo EFREI -->
     <div class="header-top">
 
+        <!-- Logo du site -->
         <img class="logo_site"
              src="../img/logo2.png"
              alt="logo du site">
 
+        <!-- Barre de recherche -->
         <div class="search-container">
             <input type="text" placeholder="Rechercher...">
         </div>
 
+        <!-- Logo EFREI -->
         <img class="logo_efrei"
              src="../img/efreilogovrai.png"
              alt="logo efrei">
 
     </div>
 
+    <!-- Menu de navigation principal -->
     <nav class="main-nav">
         <a href="accueil.html">Accueil</a>
         <a href="cours&formation.html">Cours&Formation</a>
@@ -42,24 +48,32 @@
 
 </header>
 
-
+<!-- Titre principal de la page -->
 <h1>Évaluation:</h1>
 
+<!-- Section globale des évaluations -->
 <section>
     <h2> S3 </h2>
     
 <section>
 
-
+<!-- Premier QCM : HTML, CSS, JavaScript -->
 <section class="qcm" id="qcm1">
 
-
 <h3 class="titre_QCM">Évaluation de HTML, CSS, JavaScript.</h3>
+
+<!-- Bouton pour démarrer le QCM -->
 <button type="button" class="start-btn">Start</button>
+
+<!-- Minuteur du QCM -->
 <div class="timer">Temps : <span>2:00</span></div>
+
 <br><br>
+
+<!-- Formulaire contenant les questions du QCM -->
 <form class="questions hidden">
 
+<!-- Question 1 -->
 <fieldset class="question">
 <legend>1. Que signifie HTML ?</legend>
 
@@ -74,7 +88,7 @@
 
 </fieldset>
 
-
+<!-- Question 2 -->
 <fieldset class="question">
 <legend>2. Balise pour un titre principal ?</legend>
 
@@ -89,7 +103,7 @@
 
 </fieldset>
 
-
+<!-- Question 3 -->
 <fieldset class="question">
 <legend>3. CSS sert à ?</legend>
 
@@ -101,7 +115,7 @@
 
 </fieldset>
 
-
+<!-- Question 4 -->
 <fieldset class="question">
 <legend>4. Quelle balise sert à créer un lien ?</legend>
 
@@ -116,7 +130,7 @@
 
 </fieldset>
 
-
+<!-- Question 5 -->
 <fieldset class="question">
 <legend>5. Quelle balise sert à insérer une image ?</legend>
 
@@ -131,7 +145,7 @@
 
 </fieldset>
 
-
+<!-- Question 6 -->
 <fieldset class="question">
 <legend>6. Quelle propriété change la couleur du texte ?</legend>
 
@@ -146,7 +160,7 @@
 
 </fieldset>
 
-
+<!-- Question 7 -->
 <fieldset class="question">
 <legend>7. Quelle propriété centre un texte ?</legend>
 
@@ -161,7 +175,7 @@
 
 </fieldset>
 
-
+<!-- Question 8 -->
 <fieldset class="question">
 <legend>8. Quelle balise sert à créer une liste non ordonnée ?</legend>
 
@@ -176,7 +190,7 @@
 
 </fieldset>
 
-
+<!-- Question 9 -->
 <fieldset class="question">
 <legend>9. Quelle propriété change la taille du texte ?</legend>
 
@@ -191,7 +205,7 @@
 
 </fieldset>
 
-
+<!-- Question 10 -->
 <fieldset class="question">
 <legend>10. Quelle propriété ajoute une marge extérieure ?</legend>
 
@@ -204,24 +218,35 @@
     <input type="radio" id="q10c" name="q10" value="C"><label for="q10c">margin</label>
 </fieldset>
 
+<!-- Bouton d’envoi du premier QCM -->
 <button type="submit" class="submit-btn">Envoyer</button>
 
 </form>
+
+<!-- Zone d’affichage du score -->
 <p class="score"></p>
 
 </section>
+
 <br><br><br>
 
-
+<!-- Deuxième QCM : Java -->
 <section class="qcm" id="qcm2">
 
-
 <h3 class="titre_QCM">Évaluation de Java</h3>
+
+<!-- Bouton pour démarrer le QCM -->
 <button type="button" class="start-btn">Start</button>
+
+<!-- Minuteur du QCM -->
 <div class="timer">Temps : <span>2:00</span></div>
+
 <br><br>
+
+<!-- Formulaire contenant les questions Java -->
 <form class="questions hidden">
 
+<!-- Question Java 1 -->
 <fieldset class="question">
 <legend>1. Quel mot-clé permet de créer une classe en Java ?</legend>
 
@@ -236,6 +261,7 @@
 
 </fieldset>
 
+<!-- Question Java 2 -->
 <fieldset class="question">
 <legend>2. Quelle méthode est le point de départ d’un programme Java ?</legend>
 
@@ -250,6 +276,7 @@
 
 </fieldset>
 
+<!-- Question Java 3 -->
 <fieldset class="question">
 <legend>3. Quel type sert à stocker un nombre entier ?</legend>
 
@@ -264,6 +291,7 @@
 
 </fieldset>
 
+<!-- Question Java 4 -->
 <fieldset class="question">
 <legend>4. Quel type sert à stocker du texte ?</legend>
 
@@ -278,6 +306,7 @@
 
 </fieldset>
 
+<!-- Question Java 5 -->
 <fieldset class="question">
 <legend>5. Quelle instruction affiche du texte dans la console ?</legend>
 
@@ -292,6 +321,7 @@
 
 </fieldset>
 
+<!-- Question Java 6 -->
 <fieldset class="question">
 <legend>6. Quel symbole termine une instruction Java ?</legend>
 
@@ -306,6 +336,7 @@
 
 </fieldset>
 
+<!-- Question Java 7 -->
 <fieldset class="question">
 <legend>7. Quelle valeur booléenne existe en Java ?</legend>
 
@@ -320,6 +351,7 @@
 
 </fieldset>
 
+<!-- Question Java 8 -->
 <fieldset class="question">
 <legend>8. Quelle structure sert à faire un choix ?</legend>
 
@@ -334,6 +366,7 @@
 
 </fieldset>
 
+<!-- Question Java 9 -->
 <fieldset class="question">
 <legend>9. Quelle boucle répète tant qu’une condition est vraie ?</legend>
 
@@ -348,6 +381,7 @@
 
 </fieldset>
 
+<!-- Question Java 10 -->
 <fieldset class="question">
 <legend>10. Comment écrit-on un commentaire sur une ligne ?</legend>
 
@@ -362,22 +396,35 @@
 
 </fieldset>
 
+<!-- Bouton d’envoi du QCM Java -->
 <button type="submit" class="submit-btn">Envoyer</button>
 
 </form>
+
+<!-- Zone d’affichage du score Java -->
 <p class="score"></p>
 
 </section>
+
 <br><br><br>
 
+<!-- Troisième QCM : Base de données -->
 <section class="qcm" id="qcm3">
 
 <h3 class="titre_QCM">Évaluation de Base de donnée</h3>
+
+<!-- Bouton pour démarrer le QCM -->
 <button type="button" class="start-btn">Start</button>
+
+<!-- Minuteur du QCM -->
 <div class="timer">Temps : <span>2:00</span></div>
+
 <br><br>
+
+<!-- Formulaire contenant les questions BDD -->
 <form class="questions hidden">
 
+<!-- Question BDD 1 -->
 <fieldset class="question">
 <legend>1. Une base de données sert principalement à :</legend>
 
@@ -392,6 +439,9 @@
 
 </fieldset>
 
+<!-- Suite identique : chaque fieldset correspond à une question du QCM BDD -->
+
+<!-- Question BDD 2 -->
 <fieldset class="question">
 <legend>2. En SQL, quelle commande permet d'afficher des données ?</legend>
 
@@ -406,6 +456,7 @@
 
 </fieldset>
 
+<!-- Question BDD 3 -->
 <fieldset class="question">
 <legend>3. Une clé primaire sert à :</legend>
 
@@ -420,6 +471,7 @@
 
 </fieldset>
 
+<!-- Question BDD 4 -->
 <fieldset class="question">
 <legend>4. Une clé étrangère permet de :</legend>
 
@@ -434,6 +486,7 @@
 
 </fieldset>
 
+<!-- Question BDD 5 -->
 <fieldset class="question">
 <legend>5. La 1FN (Première forme normale) impose :</legend>
 
@@ -448,6 +501,7 @@
 
 </fieldset>
 
+<!-- Question BDD 6 -->
 <fieldset class="question">
 <legend>6. La 2FN consiste surtout à :</legend>
 
@@ -462,6 +516,7 @@
 
 </fieldset>
 
+<!-- Question BDD 7 -->
 <fieldset class="question">
 <legend>7. La 3FN vise à :</legend>
 
@@ -476,6 +531,7 @@
 
 </fieldset>
 
+<!-- Question BDD 8 -->
 <fieldset class="question">
 <legend>8. Si Ville dépend du CodePostal, et CodePostal dépend de ClientID, alors en 3FN il y a :</legend>
 
@@ -490,6 +546,7 @@
 
 </fieldset>
 
+<!-- Question BDD 9 -->
 <fieldset class="question">
 <legend>9. Quelle commande ajoute une nouvelle ligne dans une table ?</legend>
 
@@ -504,6 +561,7 @@
 
 </fieldset>
 
+<!-- Question BDD 10 -->
 <fieldset class="question">
 <legend>10. La normalisation sert principalement à :</legend>
 
@@ -518,37 +576,51 @@
 
 </fieldset>
 
+<!-- Bouton d’envoi du QCM BDD -->
 <button type="submit" class="submit-btn">Envoyer</button>
 
 </form>
+
+<!-- Zone d’affichage du score BDD -->
 <p class="score"></p>
 
 </section>
+
 <br><br><br>
 </section>
+
+<!-- FOOTER -->
 <footer>
     <a href="./a_propos.html"> A propos de nous  </a>
     <a href="./login.html" class="déconnexion"> Déconnexion  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>
+
+<!-- Bouton d’ouverture du chatbot -->
 <button id="chatbotButton" class="chatbot-button">?</button>
 
+<!-- Fenêtre du chatbot -->
 <div id="chatBox" class="chat-box hidden">
+
+    <!-- En-tête du chatbot -->
     <div class="chat-header">Assistant Efrei</div>
 
+    <!-- Zone des messages -->
     <div id="messages">
         <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
+    <!-- Zone de saisie du message -->
     <div class="chat-input-area">
         <input id="chatInput" type="text" placeholder="Écris ici...">
         <button id="sendMessage" type="button">➤</button>
     </div>
 </div>
 
-
+<!-- Scripts JavaScript -->
 <script src="../js/chatbot.js"></script>
 <script src="../js/evaluation.js"></script>
-</body><!-- Fin du code de la page web --> 
+
+</body> <!-- Fin du contenu visible de la page --> 
 </html>

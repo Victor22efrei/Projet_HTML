@@ -1,8 +1,11 @@
+/* Réinitialisation des marges et paddings par défaut */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
 }
+
+/* Variables globales du site */
 :root {
     --primary: #1d355e;
     --primary-light: #2c5282;
@@ -16,27 +19,25 @@
     --radius: 20px;
 }
 
-
+/* Style général de la page */
 body.content-page {
-    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+
     background-image: url('../img/Fond4.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
+/* HEADER */
 
-
-   /* HEADER */
-
+/* Header principal de la page */
 .content-page header {
     position: relative;
     top: 0;
@@ -58,8 +59,9 @@ body.content-page {
 }
 
 /* --- ÉTAGE DU HAUT (Logo + Recherche) --- */
-.header-top {
 
+/* Zone supérieure contenant les logos et la recherche */
+.header-top {
     width: 100%;
     max-width: 1100px;
 
@@ -72,17 +74,19 @@ body.content-page {
     margin-bottom: 20px;
 }
 
+/* Logo principal du site */
 .logo_site {
     width: 80px;
     height: auto;
 }
 
+/* Logo EFREI */
 .logo_efrei {
     width: 150px;
     height: auto;
 }
 
-
+/* Conteneur de recherche dans le header */
 .header-top .search-container {
     flex: 1;
 
@@ -93,7 +97,7 @@ body.content-page {
     align-items: center;
 }
 
-
+/* Titre du site */
 .titre_site {
     color: white;
 
@@ -105,19 +109,19 @@ body.content-page {
     margin-bottom: 20px;
 }
 
-
-/* LE CONTENEUR DE LA RECHERCHE  */
+/* LE CONTENEUR DE LA RECHERCHE */
 .search-container {
     flex: 1;
     max-width: 700px;
 }
 
+/* Élément vide permettant d’équilibrer l’alignement du header */
 .header-top .header-spacer {
     flex: 1;
 }
 
+/* Barre de recherche */
 .search-container input {
-
     width: 100%;
 
     padding: 14px 20px;
@@ -135,14 +139,15 @@ body.content-page {
     background-color: white;
 }
 
-
-
+/* Couleur du texte indicatif dans la barre de recherche */
 .search-container input::placeholder {
     color: #1d355e;
 }
-/* --- ÉTAGE DU BAS  */
-.main-nav {
 
+/* --- ÉTAGE DU BAS --- */
+
+/* Menu de navigation principal */
+.main-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,8 +157,8 @@ body.content-page {
     flex-wrap: wrap;
 }
 
+/* Liens du menu de navigation */
 .main-nav a {
-
     color: #2251bcd9;
 
     text-decoration: none;
@@ -164,23 +169,20 @@ body.content-page {
     transition: 0.3s;
 }
 
-
-
+/* Effet au survol et lien actif */
 .main-nav a:hover, .main-nav a.active {
     color: #e67e22; 
 }
 
-/* La petite barre orange sous la page active (comme sur ta capture) */
+/* Petite barre orange sous la page active */
 .main-nav a.active {
     border-bottom: 3px solid #e67e22; 
     padding-bottom: 9px;
 }
 
-
-
-
-
 /* --- FOOTER --- */
+
+/* Pied de page */
 footer {
     display: block;
     background: #0f172a;
@@ -189,9 +191,9 @@ footer {
     margin-top: 100px;
     text-align: center;
     width: 100%;
-    
 }
 
+/* Liens du footer */
 footer a {
     color: var(--accent);
     text-decoration: none;
@@ -200,14 +202,15 @@ footer a {
 }
 
 /* --- RESPONSIVE --- */
+
+/* Adaptation aux écrans de moins de 768px */
 @media (max-width: 768px) {
     main { margin-top: 100px; padding: 0 20px; }
     section { padding: 30px 20px; }
     section nav ul { flex-direction: column; }
 }
 
-
-
+/* Zone principale de réservation */
 .zone-reservation {
     max-width: 900px;
     margin: 80px auto;
@@ -215,6 +218,7 @@ footer a {
     background: transparent; /* Pas de fond */
 }
 
+/* Titre de la zone de réservation */
 .entete-reservation h1 {
     font-size: 3rem;
     color: #1d355e;
@@ -222,6 +226,7 @@ footer a {
     text-align: left;
 }
 
+/* Formulaire de réservation */
 .form-invisible {
     display: flex;
     flex-direction: column;
@@ -230,18 +235,21 @@ footer a {
     padding: 0; /* Pas de marge interne */
 }
 
+/* Ligne contenant deux champs */
 .ligne {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
+/* Bloc contenant un champ et son label */
 .champ {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+/* Label des champs */
 .champ label {
     font-weight: bold;
     text-transform: uppercase;
@@ -263,19 +271,21 @@ footer a {
     transition: 0.3s;
 }
 
+/* Effet quand un champ est sélectionné */
 .form-invisible select:focus, 
 .form-invisible input:focus, 
 .form-invisible textarea:focus {
     border-bottom-color: #e67e22; /* La ligne devient orange quand on clique */
 }
 
+/* Bouton principal du formulaire */
 .bouton-fluide {
     align-self: flex-start; /* Le bouton ne prend pas toute la largeur */
     background: #1d355e;
     color: white;
     padding: 15px 40px;
     border: none;
-    border-radius: 50px; /* Bouton très arrondi comme sur ton exemple */
+    border-radius: 50px; /* Bouton très arrondi */
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
@@ -283,16 +293,18 @@ footer a {
     margin-top: 10px;
 }
 
+/* Effet au survol du bouton */
 .bouton-fluide:hover {
     background: #e67e22;
     transform: scale(1.05);
 }
 
-
+/* Classe permettant de cacher un élément */
 .hidden {
     display: none;
 }
 
+/* Bouton flottant du chatbot */
 .chatbot-button {
     position: fixed;
     right: 25px;
@@ -308,6 +320,7 @@ footer a {
     z-index: 1001;
 }
 
+/* Fenêtre du chatbot */
 .chat-box {
     position: fixed;
     right: 25px;
@@ -321,6 +334,7 @@ footer a {
     overflow: hidden;
 }
 
+/* En-tête du chatbot */
 .chat-header {
     background-color: #1d355e;
     color: white;
@@ -328,12 +342,14 @@ footer a {
     font-weight: bold;
 }
 
+/* Zone contenant les messages du chatbot */
 #messages {
     height: 280px;
     padding: 10px;
     overflow-y: auto;
 }
 
+/* Message envoyé par le bot */
 .bot-message {
     background-color: #e2e8f0;
     padding: 8px;
@@ -341,6 +357,7 @@ footer a {
     margin-bottom: 10px;
 }
 
+/* Message envoyé par l’utilisateur */
 .user-message {
     background-color: #dbeafe;
     padding: 8px;
@@ -349,17 +366,14 @@ footer a {
     text-align: right;
 }
 
+/* Zone de saisie du chatbot */
 .chat-input-area {
     display: flex;
     gap: 5px;
     padding: 10px;
 }
 
+/* Champ de saisie du chatbot */
 .chat-input-area input {
     flex: 1;
 }
-
-
-
-
-

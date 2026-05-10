@@ -1,37 +1,46 @@
-<!DOCTYPE html> <!-- Version 5 de HTML-->
-<html lang="fr"> <!-- Précision de la langue pour le navigateur-->
+<!DOCTYPE html> <!-- Version 5 de HTML -->
+<html lang="fr"> <!-- Précision de la langue pour le navigateur -->
 
-<head> <!-- Entête du document HTML -->
-<title>Cours & Formation</title> <!-- Indique au navigateur quel titre vous donnez à votre page -->
-<meta charset="UTF-8"> <!-- précise l'encodage des caractère à UTF-8-->
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/cours&formation.css">
-</head><!-- Fin de la balise d'entête -->
+<head> <!-- En-tête du document HTML -->
+    <title>Cours & Formation</title> <!-- Titre affiché dans l’onglet du navigateur -->
+    <meta charset="UTF-8"> <!-- Encodage des caractères en UTF-8 -->
 
-<body class="content-page"><!-- Début du code de la page web -->
+    <!-- Liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cours&formation.css">
+</head> <!-- Fin de la balise d'en-tête -->
 
+<body class="content-page"> <!-- Début du contenu de la page web -->
+
+<!-- HEADER -->
 <header>
 
+    <!-- Titre principal du site -->
     <p class="titre_site">
         Site internet du département informatique de l'Efrei
     </p>
 
+    <!-- Partie haute du header : logo, recherche et logo EFREI -->
     <div class="header-top">
 
+        <!-- Logo du site -->
         <img class="logo_site"
              src="../img/logo2.png"
              alt="logo du site">
 
+        <!-- Barre de recherche -->
         <div class="search-container">
             <input type="text" placeholder="Rechercher...">
         </div>
 
+        <!-- Logo EFREI -->
         <img class="logo_efrei"
              src="../img/efreilogovrai.png"
              alt="logo efrei">
 
     </div>
 
+    <!-- Menu de navigation principal -->
     <nav class="main-nav">
         <a href="accueil.html">Accueil</a>
         <a href="cours&formation.html">Cours&Formation</a>
@@ -40,335 +49,403 @@
 
 </header>
 
+<!-- Contenu principal de la page -->
 <main>
-<section>
-<h1>Présentation de la formation</h1>
-<p>Bonjour, le but de ce site interner est de regrouper un résumé qui explique les bases de chaque matiere du pôle informatique. <br>
-Une fois que tu as fini D'apprendre le ciours, nous t'invitons à te tester en répondant aux <a href="../html/evaluation.html" id="lien_qcm">QCM</a>
-</p>
 
-</section>
+<!-- Section de présentation générale -->
 <section>
-<h1>Menu du cours</h1>
-<nav>
-<ul>
-<li><a href="#cours_html" class="lien_cours">HTML/CSS/JS</a></li>
-<li><a href="#cours_java" class="lien_cours">Java</a></li>
-<li><a href="#cours_BDD" class="lien_cours">BDD</a></li>
-</ul>
-</nav>
+    <h1>Présentation de la formation</h1>
 
+    <p>
+        Bonjour, le but de ce site interner est de regrouper un résumé qui explique les bases de chaque matiere du pôle informatique. <br>
+        Une fois que tu as fini D'apprendre le ciours, nous t'invitons à te tester en répondant aux 
+        <a href="../html/evaluation.html" id="lien_qcm">QCM</a>
+    </p>
 </section>
 
+<!-- Section du menu des cours -->
+<section>
+    <h1>Menu du cours</h1>
+
+    <!-- Navigation interne vers les différentes parties du cours -->
+    <nav>
+        <ul>
+            <li><a href="#cours_html" class="lien_cours">HTML/CSS/JS</a></li>
+            <li><a href="#cours_java" class="lien_cours">Java</a></li>
+            <li><a href="#cours_BDD" class="lien_cours">BDD</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Section du cours HTML, CSS et JavaScript -->
 <section id="cours_html">
-<h1 class="titre_cours">Cours HTML, CSS, JavScript:</h1>
-<h2 class="partie_html">HTML — LA STRUCTURE</h2>
-<p>
-Le HTML sert à construire le contenu du site. <br>
-C’est la base : sans HTML, rien ne s’affiche.<br><br>
-Une page est toujours composée de deux parties :
-le head : informations invisibles (titre, encodage…)
-le body : tout ce qui est visible à l’écran <br><br>
-Le HTML fonctionne avec des balises qui permettent d’organiser le contenu :
-titres (importance du contenu)
-paragraphes (texte)
-images
-liens
-listes
-tableaux
-formulaires (interaction utilisateur) <br><br>
-Il existe aussi des <a href="https://ronan-hello.fr/series/html/balises-semantiques-html" class="lien_html">balises modernes pour structurer correctement un site</a> :
-header, nav, section, article, footer<br>
-Une règle très importante :
-toutes les balises doivent être correctement ouvertes et fermées
-pas de chevauchement
-les attributs donnent des infos supplémentaires (id, class…)<br>
-Enfin, une page HTML est représentée comme un arbre (DOM), ce qui permet de la manipuler avec JavaScript.<br><br>
-À retenir :
-HTML = structure + organisation du contenu
 
-</p>
+    <h1 class="titre_cours">Cours HTML, CSS, JavScript:</h1>
 
-<h2 class="partie_html">CSS — LE DESIGN</h2>
+    <!-- Partie HTML -->
+    <h2 class="partie_html">HTML — LA STRUCTURE</h2>
 
-<p>Le CSS sert à styliser le site, c’est-à-dire à rendre le site beau et lisible.
-Il permet de :
-changer les couleurs
-modifier les tailles de texte
-choisir les polices
-ajouter des bordures
-organiser la mise en page
-Le CSS fonctionne avec des règles composées de :
-un sélecteur (ce que tu veux modifier)
-des propriétés (ce que tu changes)
-Il existe plusieurs types de sélecteurs :
-balise (tous les éléments d’un type)
-classe (plus précis)
-id (unique)
-Un concept très important est la priorité des règles :
-la règle la plus spécifique est appliquée
-si deux règles sont égales, la dernière écrite gagne
-Le CSS utilise aussi le modèle de boîte :
-margin : espace extérieur
-padding : espace intérieur
-border : bordure
-Pour la mise en page moderne, on utilise <a href="https://www.w3schools.com/css/css3_flexbox.asp" class="lien_html">flexbox</a>, qui permet d’aligner facilement les éléments.
-Le responsive design est essentiel :
-le site doit s’adapter aux téléphones, tablettes et ordinateurs.
-Pour ça on utilise :
-des tailles relatives (comme les pourcentages)
-les media queries (règles selon la taille de l’écran)
-À retenir :
-CSS = apparence + mise en page + adaptation écran
-</p>
+    <p>
+        Le HTML sert à construire le contenu du site. <br>
+        C’est la base : sans HTML, rien ne s’affiche.<br><br>
+        Une page est toujours composée de deux parties :
+        le head : informations invisibles (titre, encodage…)
+        le body : tout ce qui est visible à l’écran <br><br>
+        Le HTML fonctionne avec des balises qui permettent d’organiser le contenu :
+        titres (importance du contenu)
+        paragraphes (texte)
+        images
+        liens
+        listes
+        tableaux
+        formulaires (interaction utilisateur) <br><br>
+        Il existe aussi des <a href="https://ronan-hello.fr/series/html/balises-semantiques-html" class="lien_html">balises modernes pour structurer correctement un site</a> :
+        header, nav, section, article, footer<br>
+        Une règle très importante :
+        toutes les balises doivent être correctement ouvertes et fermées
+        pas de chevauchement
+        les attributs donnent des infos supplémentaires (id, class…)<br>
+        Enfin, une page HTML est représentée comme un arbre (DOM), ce qui permet de la manipuler avec JavaScript.<br><br>
+        À retenir :
+        HTML = structure + organisation du contenu
+    </p>
 
-<h2 class="partie_html">JAVASCRIPT — L’INTERACTION</h2>
+    <!-- Partie CSS -->
+    <h2 class="partie_html">CSS — LE DESIGN</h2>
 
-<p>
-Le JavaScript sert à rendre le site dynamique.
-C’est lui qui permet :
-de réagir aux clics
-de modifier la page en temps réel
-de créer des animations
-de gérer les formulaires
-Le code est exécuté directement par le navigateur.
-Les bases du JavaScript :
-variables pour stocker des données
-conditions pour prendre des décisions
-boucles pour répéter des actions
-fonctions pour organiser le code
-Le concept le plus important est celui des événements :
-JavaScript attend une action de l’utilisateur (clic, saisie, mouvement…) et réagit.
-Autre notion clé : le <a href="https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model" class="lien_html">DOM</a>
-JavaScript peut accéder aux éléments HTML et les modifier :
-changer du texte
-ajouter ou supprimer des éléments
-modifier le style
-Il existe aussi des fonctions utiles :
-afficher des messages
-rediriger vers une autre page
-exécuter du code après un délai
-Enfin, JavaScript peut gérer des actions asynchrones :
-certaines actions se font en parallèle sans bloquer le reste du programme (ex : attendre une réponse serveur).
+    <p>
+        Le CSS sert à styliser le site, c’est-à-dire à rendre le site beau et lisible.
+        Il permet de :
+        changer les couleurs
+        modifier les tailles de texte
+        choisir les polices
+        ajouter des bordures
+        organiser la mise en page
+        Le CSS fonctionne avec des règles composées de :
+        un sélecteur (ce que tu veux modifier)
+        des propriétés (ce que tu changes)
+        Il existe plusieurs types de sélecteurs :
+        balise (tous les éléments d’un type)
+        classe (plus précis)
+        id (unique)
+        Un concept très important est la priorité des règles :
+        la règle la plus spécifique est appliquée
+        si deux règles sont égales, la dernière écrite gagne
+        Le CSS utilise aussi le modèle de boîte :
+        margin : espace extérieur
+        padding : espace intérieur
+        border : bordure
+        Pour la mise en page moderne, on utilise <a href="https://www.w3schools.com/css/css3_flexbox.asp" class="lien_html">flexbox</a>, qui permet d’aligner facilement les éléments.
+        Le responsive design est essentiel :
+        le site doit s’adapter aux téléphones, tablettes et ordinateurs.
+        Pour ça on utilise :
+        des tailles relatives (comme les pourcentages)
+        les media queries (règles selon la taille de l’écran)
+        À retenir :
+        CSS = apparence + mise en page + adaptation écran
+    </p>
 
-</p>
+    <!-- Partie JavaScript -->
+    <h2 class="partie_html">JAVASCRIPT — L’INTERACTION</h2>
+
+    <p>
+        Le JavaScript sert à rendre le site dynamique.
+        C’est lui qui permet :
+        de réagir aux clics
+        de modifier la page en temps réel
+        de créer des animations
+        de gérer les formulaires
+        Le code est exécuté directement par le navigateur.
+        Les bases du JavaScript :
+        variables pour stocker des données
+        conditions pour prendre des décisions
+        boucles pour répéter des actions
+        fonctions pour organiser le code
+        Le concept le plus important est celui des événements :
+        JavaScript attend une action de l’utilisateur (clic, saisie, mouvement…) et réagit.
+        Autre notion clé : le <a href="https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model" class="lien_html">DOM</a>
+        JavaScript peut accéder aux éléments HTML et les modifier :
+        changer du texte
+        ajouter ou supprimer des éléments
+        modifier le style
+        Il existe aussi des fonctions utiles :
+        afficher des messages
+        rediriger vers une autre page
+        exécuter du code après un délai
+        Enfin, JavaScript peut gérer des actions asynchrones :
+        certaines actions se font en parallèle sans bloquer le reste du programme (ex : attendre une réponse serveur).
+    </p>
+
 </section>
 
+<!-- Section du cours Java -->
 <section id="cours_java">
-<h1 class="titre_cours">Cours Initiation à Java:</h1>
-<ol>
-<li>Principe de la POO
-<p>
-La programmation orientée objet permet d’organiser un programme autour d’objets.
-Un objet regroupe :
-des données (attributs)
-des comportements (méthodes)
-Elle améliore :
-la lisibilité
-la modularité
-la maintenabilité des programmes
-Les quatre concepts fondamentaux sont :
-<a href="https://www.datacamp.com/fr/doc/java/encapsulation" class="lien_Java">encapsulation</a>
-<a href="https://www.datacamp.com/fr/doc/java/encapsulation" class="lien_Java">abstraction</a>
-héritage
-<a href="https://www.datacamp.com/fr/doc/java/polymorphism" class="lien_Java">polymorphisme</a>
-</p></li>
 
-<li>Classe et objet
-<p>
-Une classe est une abstraction représentant un ensemble d’objets ayant les mêmes caractéristiques.
-Elle contient :
-des attributs (propriétés)
-des méthodes (actions)
-Un objet est une instance d’une classe, c’est-à-dire une réalisation concrète de cette classe
-</p></li>
+    <h1 class="titre_cours">Cours Initiation à Java:</h1>
 
-<li>Structure d’un programme Java
-<p>
-Chaque classe est définie dans un fichier distinct
-Le programme principal est contenu dans une classe comportant la méthode main
-Une classe comporte généralement :
-des attributs
-un ou plusieurs constructeurs
-des méthodes
-</p></li>
+    <!-- Liste des notions Java -->
+    <ol>
 
-<li>Les attributs
-<p>
-Les attributs sont des variables décrivant l’état d’un objet.
-Si un attribut n’est pas initialisé, Java lui attribue une valeur par défaut :
-int : 0
-double : 0.0
-boolean : false
-objet : null
-</p></li>
+        <li>Principe de la POO
+            <p>
+                La programmation orientée objet permet d’organiser un programme autour d’objets.
+                Un objet regroupe :
+                des données (attributs)
+                des comportements (méthodes)
+                Elle améliore :
+                la lisibilité
+                la modularité
+                la maintenabilité des programmes
+                Les quatre concepts fondamentaux sont :
+                <a href="https://www.datacamp.com/fr/doc/java/encapsulation" class="lien_Java">encapsulation</a>
+                <a href="https://www.datacamp.com/fr/doc/java/encapsulation" class="lien_Java">abstraction</a>
+                héritage
+                <a href="https://www.datacamp.com/fr/doc/java/polymorphism" class="lien_Java">polymorphisme</a>
+            </p>
+        </li>
 
-<li>Les constructeurs
-<p>
-Un constructeur est une méthode particulière permettant de créer et initialiser un objet.
-Caractéristiques :
-porte le même nom que la classe
-ne possède pas de type de retour
-est appelé automatiquement lors de l’instanciation
-Types de constructeurs :
-constructeur par défaut (sans paramètres)
-constructeur avec paramètres (initialisation directe)
-Point important :
-Si un constructeur est défini explicitement, le constructeur par défaut n’est plus généré automatiquement. Il doit alors être redéfini si nécessaire
-</p></li>
+        <li>Classe et objet
+            <p>
+                Une classe est une abstraction représentant un ensemble d’objets ayant les mêmes caractéristiques.
+                Elle contient :
+                des attributs (propriétés)
+                des méthodes (actions)
+                Un objet est une instance d’une classe, c’est-à-dire une réalisation concrète de cette classe
+            </p>
+        </li>
 
-<li>Instanciation et gestion mémoire
-<p>
-L’instanciation permet de créer un objet.
-Lorsqu’on affecte un objet à un autre :
-les deux variables pointent vers la même zone mémoire
-Toute modification via l’un affecte l’autre.
-Solution :
-Utiliser un constructeur de copie pour créer une duplication réelle de l’objet
-</p></li>
+        <li>Structure d’un programme Java
+            <p>
+                Chaque classe est définie dans un fichier distinct
+                Le programme principal est contenu dans une classe comportant la méthode main
+                Une classe comporte généralement :
+                des attributs
+                un ou plusieurs constructeurs
+                des méthodes
+            </p>
+        </li>
 
-<li>Encapsulation
-<p>
-L’encapsulation consiste à :
-regrouper données et méthodes dans une classe
-protéger les données internes
-Niveaux de visibilité :
-public : accessible partout
-private : accessible uniquement dans la classe
-protected : accessible dans la classe et ses sous-classes
-Bonne pratique :
-attributs en private
-méthodes publiques pour y accéder
-</p></li>
+        <li>Les attributs
+            <p>
+                Les attributs sont des variables décrivant l’état d’un objet.
+                Si un attribut n’est pas initialisé, Java lui attribue une valeur par défaut :
+                int : 0
+                double : 0.0
+                boolean : false
+                objet : null
+            </p>
+        </li>
 
-<li>Getters et Setters
-<p>
-Ils permettent d’accéder et de modifier les attributs privés :
-getter : lecture d’un attribut
-setter : modification d’un attribut
-Ils assurent le respect de l’encapsulation
-</p></li>
+        <li>Les constructeurs
+            <p>
+                Un constructeur est une méthode particulière permettant de créer et initialiser un objet.
+                Caractéristiques :
+                porte le même nom que la classe
+                ne possède pas de type de retour
+                est appelé automatiquement lors de l’instanciation
+                Types de constructeurs :
+                constructeur par défaut (sans paramètres)
+                constructeur avec paramètres (initialisation directe)
+                Point important :
+                Si un constructeur est défini explicitement, le constructeur par défaut n’est plus généré automatiquement. Il doit alors être redéfini si nécessaire
+            </p>
+        </li>
 
-<li>Affichage d’un objet
-<p>
-Par défaut, Java affiche une référence mémoire.
-Pour afficher les informations d’un objet, on redéfinit la méthode :
-toString()
-Cette méthode retourne une représentation textuelle de l’objet
-</p></li>
+        <li>Instanciation et gestion mémoire
+            <p>
+                L’instanciation permet de créer un objet.
+                Lorsqu’on affecte un objet à un autre :
+                les deux variables pointent vers la même zone mémoire
+                Toute modification via l’un affecte l’autre.
+                Solution :
+                Utiliser un constructeur de copie pour créer une duplication réelle de l’objet
+            </p>
+        </li>
 
-<li>Annotation @Override
-<p>
-L’annotation @Override indique qu’une méthode redéfinit une méthode héritée.
-Elle permet :
-d’éviter les erreurs de signature
-de vérifier la cohérence du code
-</p></li>
+        <li>Encapsulation
+            <p>
+                L’encapsulation consiste à :
+                regrouper données et méthodes dans une classe
+                protéger les données internes
+                Niveaux de visibilité :
+                public : accessible partout
+                private : accessible uniquement dans la classe
+                protected : accessible dans la classe et ses sous-classes
+                Bonne pratique :
+                attributs en private
+                méthodes publiques pour y accéder
+            </p>
+        </li>
 
-<li>Comparaison d’objets
-<p>
-L’opérateur == compare les références mémoire.
-Pour comparer le contenu de deux objets, on utilise la méthode :
-equals()
-Cette méthode doit être redéfinie pour comparer les attributs
+        <li>Getters et Setters
+            <p>
+                Ils permettent d’accéder et de modifier les attributs privés :
+                getter : lecture d’un attribut
+                setter : modification d’un attribut
+                Ils assurent le respect de l’encapsulation
+            </p>
+        </li>
 
-</p></li>
-<li>Héritage
-<p>
-L’héritage permet de créer une classe à partir d’une autre.
-classe mère (superclasse)
-classe fille (sous-classe)
-Avantages :
-réutilisation du code
-réduction de la duplication
-En Java :
-une seule classe mère (pas d’héritage multiple)
-Redéfinition (Overriding)
-Une classe fille peut redéfinir une méthode héritée :
-même nom
-mêmes paramètres
-Le mot-clé super permet d’appeler la version de la classe mère
-</p> </li>
+        <li>Affichage d’un objet
+            <p>
+                Par défaut, Java affiche une référence mémoire.
+                Pour afficher les informations d’un objet, on redéfinit la méthode :
+                toString()
+                Cette méthode retourne une représentation textuelle de l’objet
+            </p>
+        </li>
 
-<li>Polymorphisme
-<p>
-Le polymorphisme permet de manipuler différents objets à travers une même interface.
-UpCast
-conversion d’un objet fils vers un type parent
-implicite
-DownCast
-conversion inverse
-explicite et plus risquée
-Utilité :
-manipuler différents objets dans une structure commune (ex : tableau)
-</p> </li>
+        <li>Annotation @Override
+            <p>
+                L’annotation @Override indique qu’une méthode redéfinit une méthode héritée.
+                Elle permet :
+                d’éviter les erreurs de signature
+                de vérifier la cohérence du code
+            </p>
+        </li>
 
-<li>Classe Scanner
-<p>
-La classe Scanner permet de lire des données :
-au clavier
-dans une chaîne
-dans un fichier
-Méthodes principales :
-nextInt()
-nextLine()
-nextDouble()
-Des méthodes de vérification existent (hasNext…) pour sécuriser la lecture
-Conclusion
-La programmation orientée objet repose sur une structuration claire :
-Classe : modèle
-Objet : instance
-Attribut : état
-Méthode : comportement
-Les concepts essentiels :
-Encapsulation : protection des données
-Héritage : réutilisation
-Polymorphisme : flexibilité
-Cette approche permet de développer des programmes plus robustes, évolutifs et maintenables.
+        <li>Comparaison d’objets
+            <p>
+                L’opérateur == compare les références mémoire.
+                Pour comparer le contenu de deux objets, on utilise la méthode :
+                equals()
+                Cette méthode doit être redéfinie pour comparer les attributs
+            </p>
+        </li>
 
-</p>
-</li>
-</ol>
+        <li>Héritage
+            <p>
+                L’héritage permet de créer une classe à partir d’une autre.
+                classe mère (superclasse)
+                classe fille (sous-classe)
+                Avantages :
+                réutilisation du code
+                réduction de la duplication
+                En Java :
+                une seule classe mère (pas d’héritage multiple)
+                Redéfinition (Overriding)
+                Une classe fille peut redéfinir une méthode héritée :
+                même nom
+                mêmes paramètres
+                Le mot-clé super permet d’appeler la version de la classe mère
+            </p>
+        </li>
+
+        <li>Polymorphisme
+            <p>
+                Le polymorphisme permet de manipuler différents objets à travers une même interface.
+                UpCast
+                conversion d’un objet fils vers un type parent
+                implicite
+                DownCast
+                conversion inverse
+                explicite et plus risquée
+                Utilité :
+                manipuler différents objets dans une structure commune (ex : tableau)
+            </p>
+        </li>
+
+        <li>Classe Scanner
+            <p>
+                La classe Scanner permet de lire des données :
+                au clavier
+                dans une chaîne
+                dans un fichier
+                Méthodes principales :
+                nextInt()
+                nextLine()
+                nextDouble()
+                Des méthodes de vérification existent (hasNext…) pour sécuriser la lecture
+                Conclusion
+                La programmation orientée objet repose sur une structuration claire :
+                Classe : modèle
+                Objet : instance
+                Attribut : état
+                Méthode : comportement
+                Les concepts essentiels :
+                Encapsulation : protection des données
+                Héritage : réutilisation
+                Polymorphisme : flexibilité
+                Cette approche permet de développer des programmes plus robustes, évolutifs et maintenables.
+            </p>
+        </li>
+
+    </ol>
 </section>
 
+<!-- Section du cours Bases de Données -->
 <section id="cours_BDD">
-<h1 class="titre_cours">Cours Bases de Données :</h1>
 
-<p>La conception d’une base de données repose sur une démarche structurée appelée méthode MERISE, qui permet de passer progressivement d’un besoin métier à une base exploitable techniquement. Dans un premier temps, on réalise une analyse afin de comprendre les besoins, les données à stocker et les contraintes. À partir de cette analyse, on construit le Modèle Conceptuel de Données (MCD), qui constitue une représentation simple et visuelle du système. Ce modèle est ensuite transformé en Modèle Logique de Données (MLD), plus formel, puis enfin en modèle physique implémenté dans un système de gestion de base de données à l’aide du langage SQL.</p>
-<p>Le <a href="https://www.custup.com/mcd-modele-conceptuel-donnees-resume/#:~:text=Un%20MCD%20(Modèle%20Conceptuel%20de,manière%20logique%20et%20facilement%20compréhensible." class="lien_BDD">MCD</a> est une étape essentielle car il permet de représenter les données de manière compréhensible, même pour des personnes non techniques. Il repose sur le modèle entité-association. Une entité correspond à un objet du monde réel que l’on souhaite modéliser, comme un client, un produit ou un film. Chaque entité possède des attributs, c’est-à-dire des propriétés qui la caractérisent, par exemple un nom, une date ou un prix. Certaines propriétés peuvent être simples, d’autres composées ou encore contenir plusieurs valeurs. Chaque entité doit également posséder un identifiant, qui permet de distinguer de manière unique chaque instance. Cet identifiant doit être stable, unique et de préférence simple pour garantir de bonnes performances.</p>
-<p>Les entités sont reliées entre elles par des associations, qui représentent des liens logiques entre les objets. Par exemple, un client peut passer une commande ou un acteur peut jouer dans un film. Ces associations peuvent relier deux entités ou plus, et peuvent même être réflexives, c’est-à-dire relier une entité à elle-même. Pour chaque association, on définit des cardinalités, qui indiquent combien de fois une entité peut intervenir dans la relation. Ces cardinalités permettent de traduire les règles métier, par exemple le fait qu’un client peut passer plusieurs commandes, mais qu’une commande est liée à un seul client.</p>
-<p><a href="http://igm.univ-mlv.fr/~chochois/RessourcesCommunes/BDD/Modelisation/coursMLD.pdf" class="lien_BDD">Le passage du MCD au MLD</a> consiste à transformer cette représentation conceptuelle en une structure exploitable sous forme de tables. Dans ce modèle, chaque entité devient une table, chaque attribut devient une colonne et l’identifiant devient la clé primaire. Les associations entre entités sont traduites par des clés étrangères ou, dans certains cas comme les relations plusieurs-à-plusieurs, par la création d’une table supplémentaire. Le modèle relationnel ainsi obtenu repose sur des règles strictes garantissant la cohérence et l’intégrité des données, notamment grâce aux contraintes et aux liens entre tables.</p>
-<p>Enfin, une fois la base de données structurée, il devient possible de manipuler les données grâce au <a href="https://www.ibm.com/docs/fr/tivoli-netcoolimpact/7.1.0?topic=SSSHYH_7.1.0/com.ibm.netcoolimpact.doc/dsa/imdsa_sql_sql_database_policies_c.htm" class="lien_BDD">SQL</a>, qui est le langage standard utilisé pour interroger les bases. Ce langage permet notamment de sélectionner des données, de filtrer des résultats, de combiner plusieurs tables ou encore de calculer des statistiques. Ces opérations reposent sur les principes de l’algèbre relationnelle, qui définit les différentes manipulations possibles sur les données, comme la sélection, la projection ou les jointures.</p>
-<p>En résumé, la conception d’une base de données consiste à partir d’un besoin réel, à structurer les données de manière logique et cohérente, puis à les rendre exploitables techniquement. Le MCD permet de comprendre le système, le MLD permet de le structurer et le SQL permet de l’utiliser efficacement.</p>
+    <h1 class="titre_cours">Cours Bases de Données :</h1>
+
+    <!-- Introduction à la méthode MERISE -->
+    <p>
+        La conception d’une base de données repose sur une démarche structurée appelée méthode MERISE, qui permet de passer progressivement d’un besoin métier à une base exploitable techniquement. Dans un premier temps, on réalise une analyse afin de comprendre les besoins, les données à stocker et les contraintes. À partir de cette analyse, on construit le Modèle Conceptuel de Données (MCD), qui constitue une représentation simple et visuelle du système. Ce modèle est ensuite transformé en Modèle Logique de Données (MLD), plus formel, puis enfin en modèle physique implémenté dans un système de gestion de base de données à l’aide du langage SQL.
+    </p>
+
+    <!-- Explication du MCD -->
+    <p>
+        Le <a href="https://www.custup.com/mcd-modele-conceptuel-donnees-resume/#:~:text=Un%20MCD%20(Modèle%20Conceptuel%20de,manière%20logique%20et%20facilement%20compréhensible." class="lien_BDD">MCD</a> est une étape essentielle car il permet de représenter les données de manière compréhensible, même pour des personnes non techniques. Il repose sur le modèle entité-association. Une entité correspond à un objet du monde réel que l’on souhaite modéliser, comme un client, un produit ou un film. Chaque entité possède des attributs, c’est-à-dire des propriétés qui la caractérisent, par exemple un nom, une date ou un prix. Certaines propriétés peuvent être simples, d’autres composées ou encore contenir plusieurs valeurs. Chaque entité doit également posséder un identifiant, qui permet de distinguer de manière unique chaque instance. Cet identifiant doit être stable, unique et de préférence simple pour garantir de bonnes performances.
+    </p>
+
+    <!-- Associations et cardinalités -->
+    <p>
+        Les entités sont reliées entre elles par des associations, qui représentent des liens logiques entre les objets. Par exemple, un client peut passer une commande ou un acteur peut jouer dans un film. Ces associations peuvent relier deux entités ou plus, et peuvent même être réflexives, c’est-à-dire relier une entité à elle-même. Pour chaque association, on définit des cardinalités, qui indiquent combien de fois une entité peut intervenir dans la relation. Ces cardinalités permettent de traduire les règles métier, par exemple le fait qu’un client peut passer plusieurs commandes, mais qu’une commande est liée à un seul client.
+    </p>
+
+    <!-- Passage du MCD au MLD -->
+    <p>
+        <a href="http://igm.univ-mlv.fr/~chochois/RessourcesCommunes/BDD/Modelisation/coursMLD.pdf" class="lien_BDD">Le passage du MCD au MLD</a> consiste à transformer cette représentation conceptuelle en une structure exploitable sous forme de tables. Dans ce modèle, chaque entité devient une table, chaque attribut devient une colonne et l’identifiant devient la clé primaire. Les associations entre entités sont traduites par des clés étrangères ou, dans certains cas comme les relations plusieurs-à-plusieurs, par la création d’une table supplémentaire. Le modèle relationnel ainsi obtenu repose sur des règles strictes garantissant la cohérence et l’intégrité des données, notamment grâce aux contraintes et aux liens entre tables.
+    </p>
+
+    <!-- Utilisation du SQL -->
+    <p>
+        Enfin, une fois la base de données structurée, il devient possible de manipuler les données grâce au <a href="https://www.ibm.com/docs/fr/tivoli-netcoolimpact/7.1.0?topic=SSSHYH_7.1.0/com.ibm.netcoolimpact.doc/dsa/imdsa_sql_sql_database_policies_c.htm" class="lien_BDD">SQL</a>, qui est le langage standard utilisé pour interroger les bases. Ce langage permet notamment de sélectionner des données, de filtrer des résultats, de combiner plusieurs tables ou encore de calculer des statistiques. Ces opérations reposent sur les principes de l’algèbre relationnelle, qui définit les différentes manipulations possibles sur les données, comme la sélection, la projection ou les jointures.
+    </p>
+
+    <!-- Résumé de la partie BDD -->
+    <p>
+        En résumé, la conception d’une base de données consiste à partir d’un besoin réel, à structurer les données de manière logique et cohérente, puis à les rendre exploitables techniquement. Le MCD permet de comprendre le système, le MLD permet de le structurer et le SQL permet de l’utiliser efficacement.
+    </p>
 
 </section>
+
 <br><br><br>
+
 </main>
 
+<!-- FOOTER -->
 <footer>
     <a href="./a_propos.html">À propos de nous</a>
     <a href="./login.html" class="déconnexion"> Déconnexion  </a>
     <p>©️2026 Selene Akdogan, Victor Vaures, Teddy Rahme.</p>
     <p>Tous droits réservés.</p>
 </footer>
+
+<!-- Bouton d’ouverture du chatbot -->
 <button id="chatbotButton" class="chatbot-button">?</button>
 
+<!-- Fenêtre du chatbot -->
 <div id="chatBox" class="chat-box hidden">
+
+    <!-- En-tête du chatbot -->
     <div class="chat-header">Assistant Efrei</div>
 
+    <!-- Zone des messages -->
     <div id="messages">
         <p class="bot-message">Bonjour ! Pose ta question ici.</p>
     </div>
 
+    <!-- Zone de saisie du message -->
     <div class="chat-input-area">
         <input id="chatInput" type="text" placeholder="Écris ici...">
         <button id="sendMessage" type="button">➤</button>
     </div>
 </div>
 
-
+<!-- Scripts JavaScript -->
 <script src="../js/chatbot.js"></script>
 <script src="../js/deconnection.js"></script>
+
 </body>
 </html>
-

@@ -1,9 +1,11 @@
+/* Réinitialisation des marges et paddings par défaut */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Pour que padding + border n'augmentent pas la taille */
 }
 
+/* En-tête de la page */
 header {
     width: 100%;
     text-align: center;
@@ -11,6 +13,7 @@ header {
     margin-bottom: 80px;
 }
 
+/* Titre principal du site */
 .titre_site {
     color: white;
     font-size: 2.5rem;
@@ -18,6 +21,7 @@ header {
     margin: 0;
 }
 
+/* Variables de couleurs utilisées dans le site */
 :root {
     --primary: #1d355e;
     --accent: #e67e22;
@@ -25,6 +29,7 @@ header {
     --white: #ffffff;
 }
 
+/* Style général de la page de contenu */
 body.content-page {
     background-image: url('../img/Fondecran.jpeg'); 
     background-size: cover;
@@ -37,6 +42,7 @@ body.content-page {
     width: 100%;
 }
 
+/* Conteneur qui aligne les cartes des membres */
 .cards-container {
     display: flex;
     justify-content: center;
@@ -47,7 +53,7 @@ body.content-page {
     width: 100%;
 }
 
-
+/* Style commun des cartes de présentation */
 #selene, #Victor, #Teddy {
     background: var(--white);
     width: 350px; 
@@ -65,6 +71,7 @@ body.content-page {
     transition: transform 0.3s ease;
 }
 
+/* Animation au survol des cartes */
 #selene:hover, #Victor:hover, #Teddy:hover {
     transform: translateY(-10px);
 }
@@ -81,6 +88,8 @@ body.content-page {
 }
 
 /* --- TEXTE --- */
+
+/* Nom ou titre dans chaque section */
 section h1 {
     color: var(--primary);
     font-size: 1.8rem;
@@ -88,6 +97,7 @@ section h1 {
     font-weight: 800;
 }
 
+/* Sous-titre dans chaque section */
 section h2 {
     color: var(--accent);
     font-size: 0.9rem;
@@ -97,6 +107,7 @@ section h2 {
     letter-spacing: 1px;
 }
 
+/* Paragraphe de description */
 section p {
     line-height: 1.6;
     color: #5a6b82;
@@ -104,13 +115,14 @@ section p {
     margin: 0;
 }
 
-
+/* Organisation spécifique de la carte Victor */
 #Victor {
     flex-direction: column;
 }
 
-
 /* --- FOOTER --- */
+
+/* Pied de page */
 footer {
     display: block;
     background: #0f172a;
@@ -119,10 +131,9 @@ footer {
     margin-top: 100px;
     text-align: center;
     width: 100%;
-   
-    
 }
 
+/* Liens du pied de page */
 footer a {
     color: var(--accent);
     text-decoration: none;
@@ -131,11 +142,10 @@ footer a {
 }
 
 /* --- RESPONSIVE --- */
+
+/* Adaptation pour les écrans de moins de 768px */
 @media (max-width: 768px) {
     main { margin-top: 100px; padding: 0 20px; }
     section { padding: 30px 20px; }
     section nav ul { flex-direction: column; }
 }
-
-
-
